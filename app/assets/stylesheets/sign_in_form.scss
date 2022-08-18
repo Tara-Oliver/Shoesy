@@ -1,28 +1,64 @@
 .signin-form {
-    display: block;
-    // flex-direction: column;
-    // max-width: 384px;
-    // opacity: 1;
-    // height: 90vh;
-    // justify-content: center;
-    // // align-items: center;
-    // // font-family: Helvetica, sans-serif;
-    // // box-shadow: 0 6px 36px rgba(34, 34, 34 / 33%);
-    // background: #FFF;
-    // color: #222;
-    // font-size: 14px;
-    // border-radius: 24px;
-    // position: relative;
-    // transition-delay: 75ms;
-    // margin: auto;
-    // width: 100%;
-    // z-index: 10;
-    // line-height: 1.4;
-    // -webkit-font-smoothing: antialiased;
-    padding: 18px;
-    
-    // transition: opacity 150ms ease-out, transform 255ms cubic-bezier(0.175, 0.745, 0.425, 1.11);
-    //     font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    display: flex;
+        // flex-direction: column;
+        // max-width: 384px;
+        // opacity: 1;
+        // height: 90vh;
+        justify-content: center;
+        // align-items: center;
+        // // font-family: Helvetica, sans-serif;
+        // // box-shadow: 0 6px 36px rgba(34, 34, 34 / 33%);
+        // background: #FFF;
+        // color: #222;
+        // font-size: 14px;
+        // border-radius: 24px;
+        // position: relative;
+        // transition-delay: 75ms;
+        // margin: auto;
+        // width: 100%;
+        // z-index: 10;
+        // line-height: 1.4;
+        // -webkit-font-smoothing: antialiased;
+        padding: 18px;
+
+
+form {
+        // height: 300px;
+        // width: 300px;
+        // background: rgb(240, 240, 240);
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        display: block;
+        padding: 18px;
+        margin-right: 18px;
+        flex-direction: column;
+        max-width: 384px;
+        opacity: 1;
+        height: 90vh;
+        justify-content: center;
+        // align-items: center;
+        font-family: Helvetica, sans-serif;
+        box-shadow: 0 6px 36px rgba(34, 34, 34, 33%);
+        background: #FFF;
+        color: #222;
+        font-size: 14px;
+        border-radius: 24px;
+        position: relative;
+        transition-delay: 75ms;
+        // margin: auto;
+        width: 100%;
+        z-index: 10;
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+        --vh: 6.92px;
+        transition: opacity 150ms ease-out, transform 255ms cubic-bezier(0.175, 0.745, 0.425, 1.11);
+        font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    }
+
+
+
 
     .signup-btn {
             background-color: white;
@@ -31,12 +67,13 @@
             text-decoration: none;
             font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
             border-radius: 24px;
-            display: block;
+            position: absolute;
+                top: 30px;
+                right: 30px;
             // background: none;
             //     border: none;
     
             //     font: inherit;
-            //     cursor: pointer;
     
             //     outline: none;
     
@@ -56,44 +93,12 @@
     
         }
 
+        .close-btn {
+            position: absolute;
+                top: 20;
+                right: 0;
+        }
 
-
-
-
-    form {
-        // height: 300px;
-        // width: 300px;
-        // background: rgb(240, 240, 240);
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        display: block; 
-        padding: 18px;
-        margin-right: 18px;
-        flex-direction: column;
-        max-width: 384px;
-        opacity: 1;
-        height: 90vh;
-        justify-content: center;
-        // align-items: center;
-        font-family: Helvetica, sans-serif;
-        box-shadow: 0 6px 36px rgba(34, 34, 34,33%);
-        background: #FFF;
-        color: #222;
-        font-size: 14px;
-        border-radius: 24px;
-        position: relative;
-        transition-delay: 75ms;
-        // margin: auto;
-        width: 100%;
-        z-index: 10;
-        line-height: 1.4;
-        -webkit-font-smoothing: antialiased;
-        --vh: 6.92px;
-        transition: opacity 150ms ease-out, transform 255ms cubic-bezier(0.175, 0.745, 0.425, 1.11);
-        font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
-    }
 
     label {
         padding: 10px;
@@ -118,6 +123,7 @@
         padding-right: 18px;
         position: relative;
         text-align: center;
+        margin-bottom: 30px;
         vertical-align: middle;
         z-index: 10;
         // border-color: #222222;
@@ -161,6 +167,7 @@
         padding-left: 12px;
         padding-right: 12px;
         width: 90%;
+        margin-bottom: 20px;
     // min-width: 0;
     }
 

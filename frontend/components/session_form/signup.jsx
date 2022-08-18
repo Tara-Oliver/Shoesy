@@ -12,7 +12,7 @@ class Signup extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    update(type) {
+    handleInput(type) {
         return e => {
             this.setState({ [type]: e.target.value })
         }
@@ -30,12 +30,12 @@ class Signup extends React.Component {
                 <form>
                 <h3>Create your account</h3>
                 <p>Registration is easy.</p>
-                    <div onClick={this.props.closeModal} className="close-x">X</div>
+                    <div onClick={this.props.closeModal} className="close-btn">X</div>
                     <label>Email address*
                         <input
                         type='text'
                         value={this.state.email}
-                        onChange={this.update('email')}
+                        onChange={this.handleInput('email')}
                         />
                     </label>
 
@@ -43,7 +43,7 @@ class Signup extends React.Component {
                         <input
                             type='text'
                             value={this.state.username}
-                            onChange={this.update('username')}
+                            onChange={this.handleInput('username')}
                         />
                     </label>
 
@@ -51,7 +51,7 @@ class Signup extends React.Component {
                         <input
                             type='password'
                             value={this.state.password}
-                            onChange={this.update('password')}
+                            onChange={this.handleInput('password')}
                         />
                     </label>
                     <button onClick={this.handleSubmit}>Register</button>
