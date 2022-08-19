@@ -24,7 +24,7 @@ class Signin extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.login(user)
-        .then(() => (this.props.closeModal)).then(() => this.props.history.push('/home'))
+        .then(() => (this.props.closeModal)).then(() => this.props.history.push(`/users/${user.id}`))
     }
 
     handleModal(e){
@@ -36,11 +36,12 @@ class Signin extends React.Component {
         e.preventDefault();
         const { login, closeModal } = this.props;
         const guestUser = {
+            id: 4,
             email: 'guest@gmail.com',
             username: 'Demo User',
             password: '123456'
         };
-        login(guestUser).then(closeModal).then(() => this.props.history.push('/home'));
+        login(guestUser).then(closeModal).then(() => this.props.history.push(`/users/${guestUser.id}`));
     }
 
     // renderErrors() {
