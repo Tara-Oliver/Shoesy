@@ -1,7 +1,11 @@
 .nav-bar {
-    justify-content: space-between;
-    padding: 20px;
-    background: white;
+background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
     align-items: center;
 
 
@@ -43,7 +47,21 @@
         font-size: 2rem;
         color: rgb(244, 88, 0);
         font-family: 'optipeach', sans-serif;
-        position: fixed;
+       position: fixed;
         top: 0;
     }
+
+        svg {
+        // display: inline-block;
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+        display: flex-end;
+    
+        // position: fixed;
+        //     top: 0;
+        //     right: 70;
+    }; 
+        
 }

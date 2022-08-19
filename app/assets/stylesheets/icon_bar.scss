@@ -4,12 +4,82 @@
 
     h2 {
         font-family: "Guardian-EgypTT", Charter, "Charter Bitstream", Cambria, "Noto Serif Light", "Droid Serif", Georgia, serif;
-            font-weight: 300;
-            letter-spacing: 0.35px;
-            font-size: 20px;
-            line-height: 32px;
-            color: #222222 !important;
-            text-align: center !important;
-            padding-top: 18px !important;
+        font-weight: 300;
+        letter-spacing: 0.35px;
+        font-size: 20px;
+        line-height: 32px;
+        color: #222222 !important;
+        text-align: center !important;
+        padding-top: 18px !important;
+            
     }
+
+    .bubble_container {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        width: 1262px;
+        margin-bottom: 2%;
+        // margin: 0;
+        // padding: 0;
+        // border: 0;
+        // font-size: 100%;
+        // vertical-align: baseline;
+        // margin-block-start: 1em;
+        // margin-block-end: 1em;
+        // margin-inline-start: 0px;
+        // margin-inline-end: 0px;
+        // padding-inline-start: 40px;
+    }
+
+    .bubble-item {
+        display: inline-block;
+       
+    }
+
+
+    .imgContainer {
+        max-width: 114px;
+        max-height: 114px;
+        width: 114px;
+        height: 114px;
+        border: #c6d5d8 solid 1px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s ease-out;
+        vertical-align: baseline;
+        
+    }
+
+    .imgContainer:hover {
+        transform: scale(1.05);
+        // filter: drop-shadow(2px 4px 6px #c6d5d8);
+        opacity: 37%;
+    }
+
+    .bubble-img {
+        width: auto;
+        height: 122%;
+        // display: inline;
+        // transition: opacity 0.5s;
+        // -webkit-transition: opacity 0.5s;
+    }
+  
+
+    p {
+        text-decoration: none;
+        color: #222222;
+    }
+
+    p:hover {
+        text-decoration: underline;
+        color: #c6d5d8;
+    }
+
+
 }
