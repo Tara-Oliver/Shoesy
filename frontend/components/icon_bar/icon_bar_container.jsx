@@ -6,7 +6,7 @@ const IconBar = () => {
     return (
         <div className='iconbar'>
             <h2 className='header'>Shop shoes that are meant for you.</h2>
-            <div>
+            <div className='bubbles'>
                 <ul className='bubble-container'>
                     <li className='bubble-item'>
                         <Link to='/Sneakers'>

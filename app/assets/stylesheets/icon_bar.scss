@@ -1,6 +1,11 @@
+
 .iconbar {
     background-color: #F8EBE6;
+    align-items: center;
 
+    .bubbles {
+        align-content: center;
+    }
 
     h2 {
         font-family: "Guardian-EgypTT", Charter, "Charter Bitstream", Cambria, "Noto Serif Light", "Droid Serif", Georgia, serif;
@@ -16,10 +21,10 @@
 
     .bubble_container {
         display: flex;
-        justify-content: center;
-        list-style: none;
-        width: 1262px;
-        margin-bottom: 2%;
+        // justify-content: space-around;
+        // list-style: none;
+        // width: 1262px;
+        // margin-bottom: 2%;
         // margin: 0;
         // padding: 0;
         // border: 0;
@@ -33,8 +38,8 @@
     }
 
     .bubble-item {
-        display: inline-block;
-       
+        display: inline-flex;
+       justify-content: space-around;
     }
 
 
