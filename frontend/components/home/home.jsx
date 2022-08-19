@@ -27,7 +27,9 @@ const Home = ({ logout, currentUser, openModal }) => {
 
 
     <div className='iconbar'>
-      <h2 className='header'>Shop shoes that are meant for you.</h2>
+      <div className='header-div'>
+        <h2 className='header'>Shop shoes that are meant for you.</h2>
+      </div>
       <div className='bubbles'>
         <ul className='bubble-container'>
           <li className='bubble-item'>
@@ -59,7 +61,7 @@ const Home = ({ logout, currentUser, openModal }) => {
           </li>
 
           <li className='bubble-item'>
-            <Link to='/Accessories'>
+              <Link to='/Accessories'>
               <div className='imgContainer'>
                 <img src={'/Accessories.png'}
                   alt="accessories_bubble"
@@ -71,21 +73,38 @@ const Home = ({ logout, currentUser, openModal }) => {
               </div>
             </Link>
           </li>
+
+            <li className='bubble-item'>
+              <Link to='/Pumps'>
+                <div className='imgContainer'>
+                  <img src={'/Pumps.png'}
+                    alt="pumps_bubble"
+                    className='bubble-img'
+                  />
+                </div>
+                <div>
+                  <p>Pumps</p>
+                </div>
+              </Link>
+            </li>
+
+            <li className='bubble-item'>
+              <Link to='/Flats'>
+                <div className='imgContainer'>
+                  <img src={'/Flats.png'}
+                    alt="flats_bubble"
+                    className='bubble-img'
+                  />
+                </div>
+                <div>
+                  <p>Flats</p>
+                </div>
+              </Link>
+            </li>
+
+
         </ul>
       </div>
-
-
-
-      {/* 
-            <Link to='/Sandals'>Sandals
-            
-            </Link>
-            <Link to='/Accessories'>Accessories
-            </Link>
-            <Link to='/Pumps'>Pumps
-            </Link>
-            <Link to='/Flats'>Flats
-            </Link> */}
     </div>
 
       

@@ -79,12 +79,18 @@
     p {
         text-decoration: none;
         color: #222222;
+        text-align: center !important;
     }
 
     p:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
         color: #c6d5d8;
+        transform: scale(1.05);
     }
 
+
+         Link {
+             text-decoration: none;
+         }
 
 }

@@ -1,0 +1,131 @@
+main {
+    // overflow: hidden;
+    // display: block;
+    // margin: 0;
+
+    //  .big {
+    //     display: block;
+    //  }       
+    
+        .bubble-bar {
+            background-color: #F8EBE6 !important;
+            color: #222222 !important;
+            text-align: center !important;
+            padding: 18px !important;
+
+        
+        
+        .title {
+            font-family: "Guardian-EgypTT", Charter, "Charter Bitstream", Cambria, "Noto Serif Light", "Droid Serif", Georgia, serif;
+            font-weight: 300;
+            letter-spacing: 0.35px;
+            font-size: 20px;
+            line-height: 32px;
+            background-color: #F8EBE6 !important;
+            color: #222222 !important;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-align: center !important;
+            padding-top: 18px !important;
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+            padding-bottom: 0px !important;
+            display: block !important;
+        }
+
+        .data {
+            display: block;
+            font-size: 14px;
+            line-height: 1.4;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .bubbles-div {
+            position: relative !important;
+            margin-bottom: 42px !important;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: block;
+            font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+        }
+
+        .background-block {
+            position: absolute !important;
+            width: 100vw;
+            left: 50%;
+            margin-left: -50vw;
+            background-color: #F8EBE6 !important;
+            margin: 0;
+            display: block;
+            height: 75%;
+        }
+
+        .bubble-box {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            margin: 0 !important;
+            padding-left: 6px !important;
+            padding-right: 6px !important;
+            padding-top: 6px !important;
+        }
+
+        Link {
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 200ms ease-out;
+            position: relative;
+            z-index: 0;
+            background: transparent;
+        }
+
+        .bubble-box {
+            padding-top: 100%;
+            position: relative !important;
+            display: block;
+        }
+
+        .bubble-pic {
+            border-radius: 50% !important;
+            overflow: hidden !important;
+            border: 1px solid rgba(34, 34, 34, 0.15) !important;
+            left: 0 !important;
+            top: 0 !important;
+            position: absolute !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        .p-div {
+            border-bottom: solid 2px rgba(89, 89, 89, 0);
+            display: block;
+        }
+
+        p {
+            font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.1px;
+            line-height: 18px;
+            text-align: center !important;
+            margin-bottom: 6px !important;
+            display: block !important;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+
+    }
+          
+    
+}
