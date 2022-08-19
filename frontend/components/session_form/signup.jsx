@@ -24,6 +24,18 @@ class Signup extends React.Component {
         this.props.processForm(user).then(this.props.closeModal);
     }
 
+    // renderErrors() {
+    //     return (
+    //         <ul>
+    //             {this.props.errors.map((error, i) => (
+    //                 <li key={`error-${i}`}>
+    //                     {error}
+    //                 </li>
+    //             ))}
+    //         </ul>
+    //     );
+    // }
+
     render() {
         return (
             <div className="session-form">
@@ -55,6 +67,7 @@ class Signup extends React.Component {
                         />
                     </label>
                     <button onClick={this.handleSubmit}>Register</button>
+                    {/* {this.renderErrors()} */}
                 </form>
             </div>
         )

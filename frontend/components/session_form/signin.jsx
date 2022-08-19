@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { openModal } from "../../actions/modal_actions";
+import { withRouter } from "react-router-dom";
 
 class Signin extends React.Component {
     constructor(props) {
@@ -24,9 +23,8 @@ class Signin extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        debugger
         this.props.login(user)
-        .then(() => (this.props.closeModal));
+        .then(() => (this.props.closeModal)).then(() => this.props.history.push('/home'))
     }
 
     handleModal(e){
@@ -38,12 +36,24 @@ class Signin extends React.Component {
         e.preventDefault();
         const { login, closeModal } = this.props;
         const guestUser = {
-            email: 'test',
-            username: '',
+            email: 'guest@gmail.com',
+            username: 'Demo User',
             password: '123456'
         };
-        login(guestUser).then(closeModal);
+        login(guestUser).then(closeModal).then(() => this.props.history.push('/home'));
     }
+
+    // renderErrors() {
+    //     return (
+    //         <ul>
+    //             {this.props.errors.map((error, i) => (
+    //                 <li key={`error-${i}`}>
+    //                     {error}
+    //                 </li>
+    //             ))}
+    //         </ul>
+    //     );
+    // }
 
 
     render() {
@@ -73,6 +83,7 @@ class Signin extends React.Component {
                     <button onClick={this.handleSubmit} className="signin-btn">Sign in</button>
                   
                     <button className="signin-btn" onClick={this.handleGuest}>Guest Demo</button>
+                    {/* {this.renderErrors()} */}
                 </form>
             </div>
         )
@@ -80,4 +91,4 @@ class Signin extends React.Component {
 
 }
 
-export default Signin;
+export default withRouter(Signin);

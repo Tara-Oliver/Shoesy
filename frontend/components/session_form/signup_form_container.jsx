@@ -4,7 +4,8 @@ import { signup } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import Signup from './signup';
 
-const mSTP = (state) => ({
+const mSTP = ({ errors }) => ({
+  errors: errors.session,
   formType: 'signup'
 })
 

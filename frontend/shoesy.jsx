@@ -7,26 +7,21 @@ import * as ApiUtil from './util/session_api_util'
 
 document.addEventListener('DOMContentLoaded', () => {
     let store;
-
-    if (window.currentUser) {
-        const { currentUser } = window;
-        const { id } = currentUser;
-        const preloadedState = {
-            entitities: {
-                users: { [id]: currentUser }
-            },
-            session: { id }
-        }
     
-        store = configureStore(preloadedState);
+    if (window.currentUser) {
+       const preloadedState = {
+            session: {
+                currentUser: window.currentUser
+            }
+        }
+        store = configureStore(preloadedState)
         delete window.currentUser;
     } else {
-        store = configureStore()
+        store = configureStore();
     }
     
-    window.login = ApiUtil.login;
-
     const root = document.getElementById('root');
+    window.store = store;
     ReactDOM.render( <Root store={store} />, root)
 
 });

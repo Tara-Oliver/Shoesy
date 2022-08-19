@@ -1,12 +1,11 @@
 import React from 'react';
 
-
-const Greeting = ({ currentUser, logout }) => {
-
-   return (<hgroup className="header-group">
-      <h2 className="header-name">Hi, {currentUser.username}!</h2>
-      <button className="header-button" onClick={logout}>Log Out</button>
-    </hgroup>)
+const Greeting = ({ currentUser }) => {
+   return (
+      <h2 className="header-name">
+         Welcome Back, {currentUser.username}!
+         </h2>
+    )
 };
 
 export default Greeting;
