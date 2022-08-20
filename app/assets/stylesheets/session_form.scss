@@ -2,6 +2,7 @@
     // border: 1px solid rgb(255, 0, 234);
     margin-top: 30px;
     height: 83%;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form-container {
@@ -9,6 +10,7 @@
     padding-top: 65px;
     margin-top: 30px;
     height: 83%;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form-box {
@@ -17,6 +19,7 @@
     margin-left: 20px;
     margin-right: 20px;
     line-height: 32px;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form-header {
@@ -24,14 +27,26 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 //login_form_container.jsx
 .register-btn {
     width: 80px;
     height: 35px;
-    border: 2px solid rgb(12, 12, 12);
-    transition: all .005s;
+    // border: 2px solid rgb(12, 12, 12);
+    // transition: all .005s;
+    
+    background-color: white;
+    color: black;
+    // padding: 10px;
+    text-decoration: none;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    border-radius: 24px;
+        // position: absolute;
+        // top: 30px;
+        // right: 30px;
+        
 }
 
 .register-btn:hover {
@@ -40,21 +55,25 @@
     transform: scale(1.028);
     opacity: 1;
     backface-visibility: hidden;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 /////////////////////
 .login-form-header h2 {
     font-size: 20px;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form-box h3 {
     font-size: 15px;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form {
     // border: 1px solid green;
     height: 70%;
     line-height: 32px;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form label {
@@ -62,36 +81,75 @@
     font-weight: normal;
     // border: 1px solid gold;
     width: 100%;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form input {
     display: inline-block;
-    border: 1px solid rgb(222, 222, 222);
-    width: 100%;
-    border-radius: 5px;
+    // border: 1px solid rgb(222, 222, 222);
+    // width: 100%;
+    // border-radius: 5px;
+
+    appearance: none;
+        background: #FFFFFF;
+        text-rendering: auto;
+        box-shadow: 0 1px 4px 0 rgba(34, 34, 34, 10%) inset;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        text-align: start;
+        -webkit-rtl-ordering: logical;
+        -webkit-text-size-adjust: 100%;
+        --vh: 6.92px;
+        cursor: text;
+        -webkit-font-smoothing: antialiased;
+        border-color: rgba(34, 34, 34, 0.15);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        color: #222222;
+        display: block;
+        font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        height: 48px;
+        outline: 3px solid transparent;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 100%;
+
 }
 
 .login-input:hover {
     border: 1px solid rgb(174, 167, 167);
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-input:focus {
     outline: none;
     border: 1px solid black;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form .errored-input:hover {
     border: 1px solid rgb(179, 56, 71);
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form .errored-input:focus {
     outline: none;
     border: 1px solid rgb(179, 56, 71);
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form .errored-input {
     border: 1px solid rgb(223, 152, 157);
     background: rgb(253, 220, 216);
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .session-submit {
@@ -104,6 +162,7 @@
     margin-top: 20px;
     font-size: 14px;
     transition: all .005s ease-in-out;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .guest-submit {
@@ -118,6 +177,7 @@
     font-size: 14px;
     font-weight: bold;
     transition: all .005s ease-in-out;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .session-submit:hover {
@@ -125,6 +185,7 @@
     transform: scale(1.028);
     opacity: 1;
     backface-visibility: hidden;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .guest-submit:hover {
@@ -132,6 +193,7 @@
     transform: scale(1.028);
     opacity: 1;
     backface-visibility: hidden;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form span {
@@ -143,11 +205,12 @@
     margin-top: 20px;
     text-align: center;
     margin-left: 30px;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 .login-form p {
     color: rgb(166, 26, 47);
-
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
 
@@ -155,4 +218,5 @@
 input[type="password"] {
     box-sizing: border-box;
     padding-left: 10px;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }

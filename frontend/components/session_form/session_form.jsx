@@ -90,6 +90,7 @@ class SessionForm extends React.Component {
                         {otherForm}
                     </div>
                     <h3>{subtitle}</h3>
+                    
                     <div className="login-form">
                         <div>
                             <label>Email address
