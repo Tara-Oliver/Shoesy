@@ -1,18 +1,25 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { login } from '../../actions/session_actions';
-import { openModal, closeModal } from '../../actions/modal_actions';
-import Signin from './signin';
+import { openModal } from '../../actions/modal_actions';
+import SessionForm from './session_form'
+import { clearErrors } from '../../actions/session_actions';
+
 
 const mSTP = ({ errors }) => ({
   errors: errors.session,
-  formType: 'login'
+  formType: 'Sign in'
 })
 
 const mDTP = (dispatch) => ({
-  login: (user) => dispatch(login(user)),
-  openModal: () => dispatch(openModal('signup')),
-  closeModal: () => dispatch(closeModal())
+  processForm: (user) => dispatch(login(user)),
+  login: guest => dispatch(login(guest)),
+  otherForm: (
+    <button onClick={() => dispatch(openModal('signup'))} className="register-btn">
+      Register
+    </button>
+  ),
+  clearErrors: () => dispatch(clearErrors()),
 })
 
-export default connect(mSTP, mDTP)(Signin);
+export default connect(mSTP, mDTP)(SessionForm);

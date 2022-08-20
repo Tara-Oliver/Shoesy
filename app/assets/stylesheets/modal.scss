@@ -1,0 +1,122 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    animation-name: fadeIn;
+    animation-duration: 350ms;
+
+    &-reverse {
+        animation-name: fadeOut;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+.modal-child {
+    position: absolute;
+    //  border: 1px solid black;
+    width: 350px;
+    height: 600px;
+    border-radius: 30px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: slideUp;
+    animation-duration: 350ms;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        top: 100%;
+    }
+
+    to {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.close-x {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.close-x:hover {
+    background: silver;
+}
+
+.modal-container {
+    position: absolute;
+    width: 455px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    //  border: 1px solid red;
+    transform: translate(-50%, -50%);
+
+    &-reverse {
+        animation-name: slideDown;
+    }
+}
+
+.modal-child-reverse {
+    position: absolute;
+    //  border: 1px solid black;
+    width: 350px;
+    height: 600px;
+    border-radius: 30px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: slideDown;
+    animation-duration: 350ms;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 1;
+        top: 50%;
+    }
+
+    to {
+        opacity: 0;
+        top: 100%;
+    }
+}

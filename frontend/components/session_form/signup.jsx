@@ -12,6 +12,24 @@ class Signup extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
+    componentDidMount() {
+        this.props.clearErrors();
+        this.setState({
+            email: '',
+            password: '',
+            username: ''
+        })
+    }
+
+    componentWillUnmount() {
+        this.props.clearErrors();
+        this.setState({
+            email: '',
+            password: '',
+            username: ''
+        })
+    }
+
     handleInput(type) {
         return e => {
             this.setState({ [type]: e.target.value })

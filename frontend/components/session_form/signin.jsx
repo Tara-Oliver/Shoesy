@@ -13,6 +13,14 @@ class Signin extends React.Component {
         this.handleModal = this.handleModal.bind(this)
         this.handleGuest = this.handleGuest.bind(this)
     }
+    
+    componentDidMount() {
+        this.props.clearErrors();
+        this.setState({
+        email: '',
+        password: '',
+        })
+    }
 
     update(type) {
         return e => {
@@ -20,11 +28,21 @@ class Signin extends React.Component {
         }
     }
 
+
+  componentWillUnmount() {
+    this.props.clearErrors();
+    this.setState({
+      email: '',
+      password: '',
+    })
+  }
+
     handleSubmit(e) {
         e.preventDefault();
+        const { login, closeModal,history } = this.props;
         const user = Object.assign({}, this.state);
-        this.props.login(user)
-        .then(() => (this.props.closeModal)).then(() => this.props.history.push(`/users/${user.id}`))
+        login(user)
+        .then(() => (closeModal)).then(() => history.push(`/users/${user.id}`))
     }
 
     handleModal(e){
