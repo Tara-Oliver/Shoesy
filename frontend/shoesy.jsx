@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
-import * as ApiUtil from './util/session_api_util'
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,10 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (window.currentUser) {
        const preloadedState = {
-            session: {
-                currentUser: window.currentUser
-            }
+            session: { currentUser: window.currentUser }
         }
+        
         store = configureStore(preloadedState)
         delete window.currentUser;
     } else {
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     const root = document.getElementById('root');
-    window.store = store;
+    window.getState = store.getState;
     ReactDOM.render( <Root store={store} />, root)
 
 });

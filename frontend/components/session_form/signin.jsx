@@ -44,17 +44,17 @@ class Signin extends React.Component {
         login(guestUser).then(closeModal).then(() => this.props.history.push(`/users/${guestUser.id}`));
     }
 
-    // renderErrors() {
-    //     return (
-    //         <ul>
-    //             {this.props.errors.map((error, i) => (
-    //                 <li key={`error-${i}`}>
-    //                     {error}
-    //                 </li>
-    //             ))}
-    //         </ul>
-    //     );
-    // }
+    renderErrors() {
+        return (
+            <ul>
+                {this.props.errors.map((error, i) => (
+                    <li key={`error-${i}`}>
+                        {error}
+                    </li>
+                ))}
+            </ul>
+        );
+    }
 
 
     render() {
@@ -84,7 +84,7 @@ class Signin extends React.Component {
                     <button onClick={this.handleSubmit} className="signin-btn">Sign in</button>
                   
                     <button className="signin-btn" onClick={this.handleGuest}>Guest Demo</button>
-                    {/* {this.renderErrors()} */}
+                    {this.renderErrors()}
                 </form>
             </div>
         )
