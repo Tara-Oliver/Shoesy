@@ -5,7 +5,18 @@ class User < ApplicationRecord
   
   attr_reader :password
   after_initialize :ensure_session_token
+
+  has_many :product_listings,
+    foreign_key: :seller_id,
+    class_name: :Product
+
+  has_many :reviews,
+    foreign_key: :author_id,
+    class_name: :Review
   
+  has_many :carts,
+    foreign_key: :buyer_id,
+    class_name: :Cart
   
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)

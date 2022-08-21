@@ -16,7 +16,7 @@ const IconBar = () => {
 
 
                                         <li className='bubble-index-item'>
-                                            <Link to='/Sneakers'>
+                                            <Link to='/Sneakers'>Sneakers
                                                 <div>
                                                     <div className='bubble-box'>
                                                         <img src={'/Sneaker.png'}
@@ -25,9 +25,9 @@ const IconBar = () => {
                                                         />
                                                     </div>
                                                 </div>
-                                                <div className='p-div'>
+                                                {/* <div className='p-div'>
                                                     <p>Sneakers</p>
-                                                </div>
+                                                </div> */}
                                             </Link>
                                         </li>
 
@@ -42,7 +42,7 @@ const IconBar = () => {
                                                     </div>
                                                 </div>
                                                 <div className='p-div'>
-                                                    <p>Sandals</p>
+                                                    {/* <p>Sandals</p> */}
                                                 </div>
                                             </Link>
                                         </li>
