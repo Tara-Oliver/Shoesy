@@ -28,6 +28,7 @@ class SessionForm extends React.Component {
             username: '',
             password: '',
         })
+
     }
    
 
@@ -39,10 +40,11 @@ class SessionForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        const { login, closeModal, history } = this.props;
+        const { processForm, closeModal, history } = this.props;
         const user = Object.assign({}, this.state);
-        login(user)
-            .then(() => (closeModal)).then(() => history.push(`/users/${user.id}`))
+        processForm(user)
+            .then(closeModal())
+            .then(() => history.push(`/users/${user.id}`))
     }
 
     handleModal(e) {
@@ -54,12 +56,14 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const { login, closeModal } = this.props;
         const guestUser = {
-            id: 4,
+            id: 1,
             email: 'guest@gmail.com',
             username: 'Demo User',
             password: '123456'
         };
-        login(guestUser).then(closeModal).then(() => this.props.history.push(`/users/${guestUser.id}`));
+        login(guestUser)
+            .then(closeModal())
+            .then(() => this.props.history.push(`/users/${guestUser.id}`));
     }
 
     render() {

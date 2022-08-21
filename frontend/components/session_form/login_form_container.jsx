@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { login } from '../../actions/session_actions';
-import { openModal } from '../../actions/modal_actions';
+import { openModal, closeModal } from '../../actions/modal_actions';
 import SessionForm from './session_form'
 import { clearErrors } from '../../actions/session_actions';
+import modal from '../modal/modal';
 
 
 const mSTP = ({ errors }) => ({
@@ -20,6 +21,7 @@ const mDTP = (dispatch) => ({
     </button>
   ),
   clearErrors: () => dispatch(clearErrors()),
+  closeModal: () => dispatch(closeModal())
 })
 
 export default connect(mSTP, mDTP)(SessionForm);

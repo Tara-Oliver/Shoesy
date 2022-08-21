@@ -50,11 +50,11 @@
 }
 
 .register-btn:hover {
-    border: 2.5px solid rgb(12, 12, 12);
-    box-shadow: 0 0 10px rgb(189, 185, 185);
+    border: 1px solid rgb(12, 12, 12);
+    // box-shadow: 0 0 10px rgb(189, 185, 185);
     transform: scale(1.028);
     opacity: 1;
-    backface-visibility: hidden;
+    // backface-visibility: hidden;
     font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
 }
 
