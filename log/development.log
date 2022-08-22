@@ -12170,3 +12170,1903 @@ Processing by Api::SessionsController#destroy as JSON
 Completed 200 OK in 73ms (Views: 1.5ms | ActiveRecord: 33.1ms)
 
 
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (40.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (31.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (8.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (18.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "benito@jaskolski-kub.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (46.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Hosea Ruecker"], ["email", "benito@jaskolski-kub.io"], ["password_digest", "$2a$12$QKdS01rZyyv1gM13KcqXc.EFOSYg3A4bWEG4R5zdjXiQ9le.zEcbK"], ["session_token", "w8yqT8pcwhp5g96gDAROQ6L833ODF6RE7Ro34Nn7OOPkUfOALGsvCJ8lXP2Rllsk41n6IO5TWxKL4BUvvBVzNg=="], ["created_at", "2022-08-21 20:52:20.657327"], ["updated_at", "2022-08-21 20:52:20.657327"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (25.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bertram@vandervort-emmerich.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (3.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Everett Ernser"], ["email", "bertram@vandervort-emmerich.com"], ["password_digest", "$2a$12$QEZnG6J6k44uDXoT.XXnDeA2eSg3hW0jszX6k6DvwvvL.TcDGj31G"], ["session_token", "iJQifXAWGS0drydPaiwlqZ4se7itYO3lALg/qOsGpA8c7QLM9abIwclqxGwb3wCiVhDj8Inn6Rnc5ABh95XUdg=="], ["created_at", "2022-08-21 20:52:21.153569"], ["updated_at", "2022-08-21 20:52:21.153569"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "margy@runolfsdottir-willms.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Rev. Leia Lubowitz"], ["email", "margy@runolfsdottir-willms.info"], ["password_digest", "$2a$12$NH3WeqqJaPXgO3qCEoq3KuKee8lgCv.WmnWeqnLoJtc80iKutvj52"], ["session_token", "ndmSNEm2uAx0OhEXI8VH2+p2ptW1DEFjtxQwD1Y4292SvQpl5ZDcM/HjT/ctMQAWC3rx69Ct5OChhzjJ0x+fRA=="], ["created_at", "2022-08-21 20:52:21.665736"], ["updated_at", "2022-08-21 20:52:21.665736"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "russel_fadel@bashirian-hickle.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (7.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Grace Schmidt"], ["email", "russel_fadel@bashirian-hickle.co"], ["password_digest", "$2a$12$3ip1oJHdywax4y3crsXFneQuMj.O8aiCeD80uRaVYmtIMMESYul.6"], ["session_token", "tLYKs9DipDYjfa9Tea5tqNwMgoPN58BeavpBNEieaIxZzQdaWeAXORH+C4wit3kjyxWTcuqFjVwjgwTDNveTkw=="], ["created_at", "2022-08-21 20:52:22.147946"], ["updated_at", "2022-08-21 20:52:22.147946"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "virgil@trantow.org"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Miles Schamberger"], ["email", "virgil@trantow.org"], ["password_digest", "$2a$12$yfJiAUxYYSPUEDbxodbls.v7/RaJ4xRr5S7ruW/uiJPZpxoEgAkv2"], ["session_token", "2vqt7CTe1hFByUNb9s3D3mAeu+72t+cctVEW3VL2lDFier8QPaiJEpny8mJ+4o8gAnjKaZBCdBDapHzChdrsrw=="], ["created_at", "2022-08-21 20:52:22.698430"], ["updated_at", "2022-08-21 20:52:22.698430"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kamilah.kiehn@wolff-bins.name"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Eve Bosco CPA"], ["email", "kamilah.kiehn@wolff-bins.name"], ["password_digest", "$2a$12$NHum/7O3iaX2othUse3j4eDwpk115m/lFsxJrdKrtE50TFkYZPgi6"], ["session_token", "+xy40uslu10tqHhNof5nVf9BRO1ojslG7gd8z8JygMOvvEBSi1bkRxFUVoVwCwptXQgma08gmC9GE8jlLN8JCw=="], ["created_at", "2022-08-21 20:54:38.357353"], ["updated_at", "2022-08-21 20:54:38.357353"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "herb.mertz@robel.biz"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Connie Schultz"], ["email", "herb.mertz@robel.biz"], ["password_digest", "$2a$12$.cRn2a7mQD49chJ3a1w9w.TsN45kaTwgOZiqlEwIsN...9SO5m69W"], ["session_token", "deUT87Nf09qZ9hkszqIEQB1xFFJ9RKDRtMFdjHlCTtzEhLwu17TAyEezYRoUnp0OCwnx0/sJ9pLz5UEN9Ox2fQ=="], ["created_at", "2022-08-21 20:54:38.834628"], ["updated_at", "2022-08-21 20:54:38.834628"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cheryle_donnelly@hessel.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (8.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Tiffiny Reichert"], ["email", "cheryle_donnelly@hessel.com"], ["password_digest", "$2a$12$T6hhjpN50oPLOp3tG/Anj.sTNCyehQyPnvRR3JWxeq1LcF5SUrd/e"], ["session_token", "fpJLDLXhzG/NxGVuvnLjKH46X/pv3R7eBTb2ZsAL8BA7dsRPxS6mbpW0Q/sDHCENFM3WHdFz6x+winsWAtTTNg=="], ["created_at", "2022-08-21 20:54:39.312218"], ["updated_at", "2022-08-21 20:54:39.312218"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "khadijah_jacobs@nienow.name"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Asa Paucek"], ["email", "khadijah_jacobs@nienow.name"], ["password_digest", "$2a$12$5cRQEjtvZCGob9CtZRFWAuJaOhbvNY7GuDTFpRVK8WgvMm7VLNZZe"], ["session_token", "NLsAacnCpzECzaHYqTetknAhd8QdBHeLNnlw/a07uO8rBQRH0BJhrbL1nK0xCFmWzx6PTTURSUgwx+z6tneYRg=="], ["created_at", "2022-08-21 20:54:39.797721"], ["updated_at", "2022-08-21 20:54:39.797721"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "taneka.white@nader.org"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Create (11.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Augustina Crooks"], ["email", "taneka.white@nader.org"], ["password_digest", "$2a$12$RSbPX7wAanaRTetNzZ3v4euAaB7jC9dl1A.2Xpx.JpBiFZmpOK5Ze"], ["session_token", "EXlMGX/HAJqrx97r5hL7T2hWlcoL6Vh1yjxkqqQFb46j0QDQKRIBH8ciwkzMfQnPt1xOxYbrovvA6lnADiN8KQ=="], ["created_at", "2022-08-21 20:54:40.284088"], ["updated_at", "2022-08-21 20:54:40.284088"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (5.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mProduct Load (24.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "shantay@carroll.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (4.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Everett Rolfson"], ["email", "shantay@carroll.co"], ["password_digest", "$2a$12$MZE5oIa2SBE2Am/Ox4X3t.KSsydMuZEiJtSLYHmNg4iTvw3mQ9eRi"], ["session_token", "FqaFiEvVvjXyAckeSobkoN0UzlYaXvXoFERVyym5E+gxxSGjRq11FPm6DDjHptZ94lrrhCaJZdH5QahKSg9inw=="], ["created_at", "2022-08-21 21:02:33.334406"], ["updated_at", "2022-08-21 21:02:33.334406"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "abram@mayer.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Rev. Damien Baumbach"], ["email", "abram@mayer.com"], ["password_digest", "$2a$12$qjURAP2LSMX0Jp3SB5Xkb.y2NQEElKrPBSNr1y1fe4h4dUp6rhH4q"], ["session_token", "9rEMgO24/C/nH9uoNRAAkf1d8OI4ZyfI+G+6R2i/DPCwgvTGvA6Flv35fkdI8Ry9LF+CODi/uqTpqBfBskl3nQ=="], ["created_at", "2022-08-21 21:02:33.649986"], ["updated_at", "2022-08-21 21:02:33.649986"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "nikita.cartwright@beatty-boyle.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Kristeen Jacobi"], ["email", "nikita.cartwright@beatty-boyle.co"], ["password_digest", "$2a$12$fz3karcciVoWaHDmYIBCr.rpns3lCr3vW9xe00xAxDwIP/E4VbMdm"], ["session_token", "RwEa15JMI8aO+A0dzk6HGmAUczrAPoDqu3NsFod2NHIsnS9QKB2SEwPPnZkXe3oNGnFOqiaPpGrUWhwRaKLYDw=="], ["created_at", "2022-08-21 21:02:33.943777"], ["updated_at", "2022-08-21 21:02:33.943777"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chong@carter.biz"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Dorthea McGlynn"], ["email", "chong@carter.biz"], ["password_digest", "$2a$12$DWpcqSQ.cB0rOYEXJ3r0L.iHWCdxBpG0KZKiVWFqDhHfQ10/LYOFa"], ["session_token", "ZkLAOAN6B9FiCTs+hvXhBKOB/PHsPBBJiSbqWoziV34cx4GGfrqNUjs/URDcJ/SNHuGiFu2DkvS0Md1Cdt9U4Q=="], ["created_at", "2022-08-21 21:02:34.232638"], ["updated_at", "2022-08-21 21:02:34.232638"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "leigh.swift@kshlerin.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Prof. Jacquie Bosco"], ["email", "leigh.swift@kshlerin.net"], ["password_digest", "$2a$12$qhoOrsRSYfFyMTLFjP5aM.0bo.DQMCXffEgVBVC5Deh9pm/h6Refe"], ["session_token", "w10vsc32NX5oejFS19on8DzvWKFuojWmTfSBn0HxhH9B1glZZA9+P39wazIHMulIf/088Kg1zwxmfL6FGYGX5g=="], ["created_at", "2022-08-21 21:02:34.532941"], ["updated_at", "2022-08-21 21:02:34.532941"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[35m (3.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:11
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marivel.bernhard@boyle-bashirian.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Reed Schaefer LLD"], ["email", "marivel.bernhard@boyle-bashirian.co"], ["password_digest", "$2a$12$Z041rn/Df4ez7YCvzlR9ZuAyRSeb5TQpIVAHlTqoiuTaNd/Y2GFdq"], ["session_token", "h/81SGEiuMFzgdEKldFpScPzo7GtIK8kt6ACsiuFiCALnalCcqCzRmsFfHdxEYvFpxFn0ujCujT+PG4AxpM8Lw=="], ["created_at", "2022-08-21 21:03:33.469765"], ["updated_at", "2022-08-21 21:03:33.469765"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aubrey@klocko.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Thea D'Amore"], ["email", "aubrey@klocko.com"], ["password_digest", "$2a$12$p9A.9/oijR3E1sNNBIPLl.GmgpDTaxVbu9jWmSxBCEcRtLj6N7Rsa"], ["session_token", "6W0unfZsBXKgghTsiJDFbXzmDcYpYmPFBx3lV7m/4Mj7TqpDTKfCI2gcZ7nrPd5VPhnadv/Bdzs1RIsuP2f8xg=="], ["created_at", "2022-08-21 21:03:33.762823"], ["updated_at", "2022-08-21 21:03:33.762823"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marta@lesch-tromp.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Johnathan Schamberger"], ["email", "marta@lesch-tromp.co"], ["password_digest", "$2a$12$ISVVJVR94iUHvT/8yabjAuf0IsDAWa1o7WJN.UquCs8yC17Ch/cS."], ["session_token", "CblEis3Xx4y2uurlymcgxthDErWcBzHVrqf78g31L8jzDH2FBL0C6TfCxRHJPjd1jyzz35iSBrddHGyY6m+2zQ=="], ["created_at", "2022-08-21 21:03:34.050485"], ["updated_at", "2022-08-21 21:03:34.050485"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "yong@deckow.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Lee Schamberger"], ["email", "yong@deckow.co"], ["password_digest", "$2a$12$8kH.CdD1clsVJUWh9YLIluJPWRbhxahqNhf34GByfzv/JHG8VS6zO"], ["session_token", "1c8EN16eec24m7Bl7r661IIENtbmDIkwFJSHsh+vEEccMSTSZr/o3FF3VTbIm66t6vKdsQRZIdRFmvbnWrDvYg=="], ["created_at", "2022-08-21 21:03:34.336676"], ["updated_at", "2022-08-21 21:03:34.336676"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mirella.hoppe@okuneva-rosenbaum.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Matt Lowe"], ["email", "mirella.hoppe@okuneva-rosenbaum.net"], ["password_digest", "$2a$12$DmrBOAd/zHnimkWJRedvHui4hIcG0H8vwONVA625mmZQMmY0xDUbS"], ["session_token", "Zrpli7yuSNjH+rC03qusNcV1jUsIBfCoN7pOgi/D7nY0j5+0YxW4rfech2s7v1CHfqet5DS6GlQ1gKAPg7H32w=="], ["created_at", "2022-08-21 21:03:34.622382"], ["updated_at", "2022-08-21 21:03:34.622382"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mProduct Create (8.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade Genuine Leather Women's Strappy Sandals, Leather Lace Up Shoes"], ["description", "Handmade Genuine Leather Women's Thong Sandals, one of the iconic sandals, show a strong stance by combining with genuine leather quality. One of the most popular strap sandal models of the new season, these women's shoes will be the signature of your style in your daily, office and special days. It is waiting to meet you with white, brown and black color options\n    \n    Material: Genuine Leather, EVA sole\n    Height : 3 cm\n    \n    ✔ Make sure you check our size-chart before you place your order.\n\n    • It is original and all models are designed.\n    • It is completely handmade.\n    • It is antibacterial, does not contain carcinogenic and allergen substances.\n    • To be very light and comfortable, it creates unstoppable feelings.\n    • It is suitable for living in the city."], ["seller_id", 22], ["price", 59.4], ["category", "Sandals"], ["created_at", "2022-08-21 21:03:34.637164"], ["updated_at", "2022-08-21 21:03:34.637164"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Japan Anime Inspired Casual Sneakers, Unisex Anime Shoes, Manga Sneakers"], ["description", "UNISEX Streetwear Anime-Inspired Cosplay Sneakers.\n\n    United Kingdom customers please be sure to buy 1 size bigger than usual for a comfy fit.\n\n    Light and comfortable, basic printed shoes without brand.\n    Material: Cotton, Rubber, and PU Leather."], ["seller_id", 20], ["price", 48.79], ["category", "Sneakers"], ["created_at", "2022-08-21 21:03:34.654466"], ["updated_at", "2022-08-21 21:03:34.654466"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Classic Hologram Iridescent High Heels | 7 colors| Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps"], ["description", "Classic Pink Hologram Iridescent High Heels | Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps\n\n    Pump Type: Basic\n    Heel Type: Thin Heels\n    Upper Material: Patent Leather\n    Heel Height: Super High (8cm-up)\n    Fashion Element: Shallow\n    Insole Material: PU\n    Lining Material: PU\n    Season: Spring/Autumn\n    Toe Shape: Pointed Toe\n    Outsole Material: Rubber\n    Item Type: Pumps\n    Closure Type: Slip-On\n    HEEL: 12cm 10cm 8cm"], ["seller_id", 19], ["price", 80.0], ["category", "Pumps"], ["created_at", "2022-08-21 21:03:34.660913"], ["updated_at", "2022-08-21 21:03:34.660913"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Crystal Rhinestone Applique Accessory Craft For Women Shoe Heel Barefoot Sandal Belt Headband Wedding Bridal"], ["description", "A little colour to pop your look as you enter & major sparkle as you exit!\n    The listing is for one piece of diamante motif.\n    Please order two if you need them to decorate shoes.\n    Dimensions Approxi.: (10.5cm x 5.8 cm)\n\n    These motifs are perfect for making any heels that you want to wear more bridal!\n\n    Bridesmaid can wear these motifs to create a cohesive look no matter what colour shoes they wear.\n\n    This appliqué can be applied with a hot iron (checking regularly through the process to make sure it is stuck and the item doesn't become damaged), or alternatively with hot glue from a glue gun."], ["seller_id", 21], ["price", 12.43], ["category", "Accessories"], ["created_at", "2022-08-21 21:03:34.667164"], ["updated_at", "2022-08-21 21:03:34.667164"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Huarache ~ All Sizes Boho- Hippie Vintage ~ Mexican Style ~ Colorful Leather ~ Mexican Huaraches"], ["description", "This style is Beige with Black color\n\n    Made in Mexico\n    Handmade\n    100% Natural Leather\n    Completely handmade\n    A unique style Huarache.\n\n\n    We do not handle intermediate sizes, example 5.5, if you use 7.5 order a 7. If you are a 7 , order a 7. Huarache will mold by use- they stretch."], ["seller_id", 1], ["price", 39.99], ["category", "Flats"], ["created_at", "2022-08-21 21:03:34.673459"], ["updated_at", "2022-08-21 21:03:34.673459"]]
+  ↳ db/seeds.rb:122
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[36mUser Load (12.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (276.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Shoesy_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (202.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "Shoesy_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (589.3ms)[0m  [1m[35mCREATE DATABASE "Shoesy_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (427.3ms)[0m  [1m[35mCREATE DATABASE "Shoesy_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (13.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (10.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (80.7ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (28.1ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "buyer_id" integer NOT NULL, "product_id" integer NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_buyer_id" ON "carts"  ("buyer_id")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_product_id" ON "carts"  ("product_id")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "products" CASCADE[0m
+  ↳ db/schema.rb:46
+  [1m[35m (23.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" text NOT NULL, "description" text NOT NULL, "seller_id" integer NOT NULL, "price" float NOT NULL, "category" character varying, "quantity" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:46
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE  INDEX  "index_products_on_name" ON "products"  ("name")[0m
+  ↳ db/schema.rb:46
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE  INDEX  "index_products_on_seller_id" ON "products"  ("seller_id")[0m
+  ↳ db/schema.rb:46
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  ↳ db/schema.rb:59
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "body" text DEFAULT '', "rating" integer NOT NULL, "product_id" integer NOT NULL, "author_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:59
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_author_id" ON "reviews"  ("author_id")[0m
+  ↳ db/schema.rb:59
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_product_id" ON "reviews"  ("product_id")[0m
+  ↳ db/schema.rb:59
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:70
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying, "session_token" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:70
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:70
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:70
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/schema.rb:70
+  [1m[35m (52.9ms)[0m  [1m[35mALTER TABLE "active_storage_attachments" ADD CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+[0m
+  ↳ db/schema.rb:82
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220821000841)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220820193208),
+(20220816035334),
+(20220819003730),
+(20220820200442),
+(20220820195446),
+(20220820193256),
+(20220818010917),
+(20220820234520);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-21 21:08:29.960095"], ["updated_at", "2022-08-21 21:08:29.960095"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (1.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_attachments" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (30.4ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "active_storage_blobs" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (26.9ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "carts" CASCADE[0m
+  ↳ db/schema.rb:39
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "carts" ("id" bigserial primary key, "buyer_id" integer NOT NULL, "product_id" integer NOT NULL)[0m
+  ↳ db/schema.rb:39
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_buyer_id" ON "carts"  ("buyer_id")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE  INDEX  "index_carts_on_product_id" ON "carts"  ("product_id")[0m
+  ↳ db/schema.rb:39
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "products" CASCADE[0m
+  ↳ db/schema.rb:46
+  [1m[35m (21.6ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" text NOT NULL, "description" text NOT NULL, "seller_id" integer NOT NULL, "price" float NOT NULL, "category" character varying, "quantity" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:46
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE  INDEX  "index_products_on_name" ON "products"  ("name")[0m
+  ↳ db/schema.rb:46
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE  INDEX  "index_products_on_seller_id" ON "products"  ("seller_id")[0m
+  ↳ db/schema.rb:46
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews" CASCADE[0m
+  ↳ db/schema.rb:59
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "body" text DEFAULT '', "rating" integer NOT NULL, "product_id" integer NOT NULL, "author_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:59
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_author_id" ON "reviews"  ("author_id")[0m
+  ↳ db/schema.rb:59
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_product_id" ON "reviews"  ("product_id")[0m
+  ↳ db/schema.rb:59
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:70
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "email" character varying NOT NULL, "password_digest" character varying, "session_token" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:70
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:70
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:70
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/schema.rb:70
+  [1m[35m (6.2ms)[0m  [1m[35mALTER TABLE "active_storage_attachments" ADD CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+[0m
+  ↳ db/schema.rb:82
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220821000841)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220820193208),
+(20220816035334),
+(20220819003730),
+(20220820200442),
+(20220820195446),
+(20220820193256),
+(20220818010917),
+(20220820234520);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (20.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-08-21 21:08:30.445559"], ["updated_at", "2022-08-21 21:08:30.445559"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (2.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2022-08-21 21:08:30.455461"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mProduct Load (1.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "gabriel@kozey-carroll.name"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "neil"], ["email", "gabriel@kozey-carroll.name"], ["password_digest", "$2a$12$mODuuhhR8zTpDA03UWohSemgvCh6NkAWzsHXhuoixZ0konm6qsHpe"], ["session_token", "bBBtw4ZO41yQ4weEAlxsMBFrk4g4Pc/dyLFT/KIUvtfoNZqwSMkxZE3LCA9rAJ8z3hbaNsstY1y6gES7zq/TCA=="], ["created_at", "2022-08-21 21:08:31.894448"], ["updated_at", "2022-08-21 21:08:31.894448"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "andy.mcdermott@johnston-murray.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "ismael.stoltenberg"], ["email", "andy.mcdermott@johnston-murray.io"], ["password_digest", "$2a$12$FlGrInHh8LuKRms8Iis4WOYhvATDT47kYzSMMO4abn/2B5kzUtrwa"], ["session_token", "yUZ32dI57LEYkrPRUe5jh7+aVHVwRSIg57T1Rqx64NmAVTvZDtdMdhNhpSuHAmXwFYkAtJrLOT8o4V4nAswnkw=="], ["created_at", "2022-08-21 21:08:32.243140"], ["updated_at", "2022-08-21 21:08:32.243140"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "regenia@mitchell-smith.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "jeanice"], ["email", "regenia@mitchell-smith.info"], ["password_digest", "$2a$12$ikM.V/irC.qxPlNIy7hD8u9wvfMT35Wwq6F6ox0HhiHgvoIivM59e"], ["session_token", "oCcBPjgstZHx9hhqmnc6AZvDC9b2pazf0dQEMxFo4Z9FYGClMjko+p7Z7EcGTjjTkxP18YT2vv7bVygFe7DrAA=="], ["created_at", "2022-08-21 21:08:32.554346"], ["updated_at", "2022-08-21 21:08:32.554346"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "billie@harber-thiel.name"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:33
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "kenny_glover"], ["email", "billie@harber-thiel.name"], ["password_digest", "$2a$12$zumiotyCq47NuFVP5koYoe75ZsLq42Z4i6fr0kb7Wpxp3liaB/TZS"], ["session_token", "TpjV0RKnf2gy1f+v5OuDWK0uBpMecpSQcUBShwEoFuW7r7zfTQDjLkJL/yNJFGcZ1t1Tp+wDG91++Cyvc3633g=="], ["created_at", "2022-08-21 21:08:32.872887"], ["updated_at", "2022-08-21 21:08:32.872887"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "celesta@hermiston.name"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:39
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "mauricio_douglas"], ["email", "celesta@hermiston.name"], ["password_digest", "$2a$12$gc.boCOIj8SpiK1wMRvfM.CV/IFpfGcXRMxPLb22m.TBz4sSzxz3S"], ["session_token", "7wHe6kbU3dG/jEKldO4zmEZwy3SaL5hwujC4fGzo6UCfdVoicvLhNyZUIYFg0QpTk84NjWtnjiiRz/Tfwzu+eQ=="], ["created_at", "2022-08-21 21:08:33.187687"], ["updated_at", "2022-08-21 21:08:33.187687"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade Genuine Leather Women's Strappy Sandals, Leather Lace Up Shoes"], ["description", "Handmade Genuine Leather Women's Thong Sandals, one of the iconic sandals, show a strong stance by combining with genuine leather quality. One of the most popular strap sandal models of the new season, these women's shoes will be the signature of your style in your daily, office and special days. It is waiting to meet you with white, brown and black color options\n    \n    Material: Genuine Leather, EVA sole\n    Height : 3 cm\n    \n    ✔ Make sure you check our size-chart before you place your order.\n\n    • It is original and all models are designed.\n    • It is completely handmade.\n    • It is antibacterial, does not contain carcinogenic and allergen substances.\n    • To be very light and comfortable, it creates unstoppable feelings.\n    • It is suitable for living in the city."], ["seller_id", 5], ["price", 59.4], ["category", "Sandals"], ["created_at", "2022-08-21 21:08:33.202522"], ["updated_at", "2022-08-21 21:08:33.202522"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:66
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Japan Anime Inspired Casual Sneakers, Unisex Anime Shoes, Manga Sneakers"], ["description", "UNISEX Streetwear Anime-Inspired Cosplay Sneakers.\n\n    United Kingdom customers please be sure to buy 1 size bigger than usual for a comfy fit.\n\n    Light and comfortable, basic printed shoes without brand.\n    Material: Cotton, Rubber, and PU Leather."], ["seller_id", 3], ["price", 48.79], ["category", "Sneakers"], ["created_at", "2022-08-21 21:08:33.210262"], ["updated_at", "2022-08-21 21:08:33.210262"]]
+  ↳ db/seeds.rb:66
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:66
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:80
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Classic Hologram Iridescent High Heels | 7 colors| Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps"], ["description", "Classic Pink Hologram Iridescent High Heels | Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps\n\n    Pump Type: Basic\n    Heel Type: Thin Heels\n    Upper Material: Patent Leather\n    Heel Height: Super High (8cm-up)\n    Fashion Element: Shallow\n    Insole Material: PU\n    Lining Material: PU\n    Season: Spring/Autumn\n    Toe Shape: Pointed Toe\n    Outsole Material: Rubber\n    Item Type: Pumps\n    Closure Type: Slip-On\n    HEEL: 12cm 10cm 8cm"], ["seller_id", 2], ["price", 80.0], ["category", "Pumps"], ["created_at", "2022-08-21 21:08:33.214728"], ["updated_at", "2022-08-21 21:08:33.214728"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:104
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Crystal Rhinestone Applique Accessory Craft For Women Shoe Heel Barefoot Sandal Belt Headband Wedding Bridal"], ["description", "A little colour to pop your look as you enter & major sparkle as you exit!\n    The listing is for one piece of diamante motif.\n    Please order two if you need them to decorate shoes.\n    Dimensions Approxi.: (10.5cm x 5.8 cm)\n\n    These motifs are perfect for making any heels that you want to wear more bridal!\n\n    Bridesmaid can wear these motifs to create a cohesive look no matter what colour shoes they wear.\n\n    This appliqué can be applied with a hot iron (checking regularly through the process to make sure it is stuck and the item doesn't become damaged), or alternatively with hot glue from a glue gun."], ["seller_id", 4], ["price", 12.43], ["category", "Accessories"], ["created_at", "2022-08-21 21:08:33.219589"], ["updated_at", "2022-08-21 21:08:33.219589"]]
+  ↳ db/seeds.rb:104
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:104
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Huarache ~ All Sizes Boho- Hippie Vintage ~ Mexican Style ~ Colorful Leather ~ Mexican Huaraches"], ["description", "This style is Beige with Black color\n\n    Made in Mexico\n    Handmade\n    100% Natural Leather\n    Completely handmade\n    A unique style Huarache.\n\n\n    We do not handle intermediate sizes, example 5.5, if you use 7.5 order a 7. If you are a 7 , order a 7. Huarache will mold by use- they stretch."], ["seller_id", 1], ["price", 39.99], ["category", "Flats"], ["created_at", "2022-08-21 21:08:33.223901"], ["updated_at", "2022-08-21 21:08:33.223901"]]
+  ↳ db/seeds.rb:122
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:11
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (5.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (3.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "guest@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Demo User"], ["email", "guest@gmail.com"], ["password_digest", "$2a$12$gfqFPmFyz3lDom2zcYmAjegDHjfc8njZ0xy0uj6NTK/ew6Wv92972"], ["session_token", "+FDtsSzQ/gOonvDBHKAbqx7owJ2QKE8jx9MY8NJfXCDkbvgNgRHkjDpq5pPiF+4YMNricbF4cBhTxa7FHzVkMA=="], ["created_at", "2022-08-21 21:16:53.690677"], ["updated_at", "2022-08-21 21:16:53.690677"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "wilford@willms.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "lyle"], ["email", "wilford@willms.io"], ["password_digest", "$2a$12$hjTT4mlolabAzCraxoKQBeMxo5Hb7yqY5hYIuZX9fosWxysFZXtMO"], ["session_token", "YVGJ+w2cQxYGW0YtAmLGBfOvm6fDYHvPCDtKOIJRYifuKD4KfKb+sxqMgKvTwWdcW8I31IGzRLfKU8nPSRoVpA=="], ["created_at", "2022-08-21 21:16:54.802524"], ["updated_at", "2022-08-21 21:16:54.802524"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "erich@kautzer-mayer.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "rueben"], ["email", "erich@kautzer-mayer.net"], ["password_digest", "$2a$12$stWiDdIralZ..gicahaqpuhE6vNSQOub172kE8/H9S/X3Q0prIDAO"], ["session_token", "k2xiRoy5bjQP08AHJaq50sebh6UDOFcUrjDsw5inOjy+OA6RnfT63kkutjODgwMWHNMhgi8i6C/5sw3vDZAfOQ=="], ["created_at", "2022-08-21 21:16:55.155651"], ["updated_at", "2022-08-21 21:16:55.155651"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "alfredo.borer@jerde-franecki.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "elliot"], ["email", "alfredo.borer@jerde-franecki.net"], ["password_digest", "$2a$12$sPSUFxkpu6NG9yU9wERmAunYDNTiNQ8NxbKXQjB/B2w1WkMUKatR2"], ["session_token", "BjbiL5KKigMfyhEH+tqyWid5PMidCQNuWCXK9Wkip3EmnDQSj2vzTW1N4L/hShdj24jdcNT6vo2m+WeQRwFRHQ=="], ["created_at", "2022-08-21 21:16:55.724618"], ["updated_at", "2022-08-21 21:16:55.724618"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "grant@ondricka.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "torie.marquardt"], ["email", "grant@ondricka.io"], ["password_digest", "$2a$12$cgg.Bif8w.yr1rg.t7Vth.LLm971sZH8nANXqlRZ9GsTSnb.hJ4uC"], ["session_token", "JMCFukYxMu7BmOLRW8X7o/SKwxg91Ub1C8st8xmBpOlfRE355zYziVzIPCWiAZn+c1WomWaAyM5bM2ul09e7MQ=="], ["created_at", "2022-08-21 21:16:56.151671"], ["updated_at", "2022-08-21 21:16:56.151671"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "carroll@crooks-flatley.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "garret_schumm"], ["email", "carroll@crooks-flatley.net"], ["password_digest", "$2a$12$VGqK2HX4g1bib2z4v6vD.OwzqqFH803iFvRKQbWYYt8WdJBsreNt6"], ["session_token", "V38rk4I9vmwc/vlQsm+q8zYScaxxPggyjeWOZduF03kDkQHBthBcNYMhh9tdJOK4FCn6jAZXGNbOXxuH3arX/Q=="], ["created_at", "2022-08-21 21:16:56.537202"], ["updated_at", "2022-08-21 21:16:56.537202"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "freddie.frami@schoen.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "sunday_mosciski"], ["email", "freddie.frami@schoen.io"], ["password_digest", "$2a$12$HYfsojnZM66jiTKSOj7PeuScU5mVBDDWv1fyeC53xEu6rwuUmDbxW"], ["session_token", "wAULTwn9tCPFf+EfRPQNjCdQo1y3akoo+uCDKh0064zA2FnU8SR8LMRdQTYV0aq+/obsHrTrNScm4stdyOlqMQ=="], ["created_at", "2022-08-21 21:16:57.021656"], ["updated_at", "2022-08-21 21:16:57.021656"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (22.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lynnette@dickinson-gutkowski.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "willene.reynolds"], ["email", "lynnette@dickinson-gutkowski.info"], ["password_digest", "$2a$12$OyinHeY1jO.mf1maL54bT.th3dhaM.lhVDTTT6pg1JSbdKreNmjoK"], ["session_token", "Ok3oaN+KO6LKrrFrf2PtzS1acIQM2ONOSvb1Jv5nvNFI3rQHZZ4m7dOlNzpKzU5eL8dCGOumVc9q/XXwQQ9vtw=="], ["created_at", "2022-08-21 21:16:57.428212"], ["updated_at", "2022-08-21 21:16:57.428212"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (9.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (6.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "josue@okeefe.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "manda.stanton"], ["email", "josue@okeefe.io"], ["password_digest", "$2a$12$H9UL6eFTxJG4wHWzE7pjauieTM3pZeA.43TPV1T5nff/qE3bvlgAa"], ["session_token", "gZR/xZ4JK9FPDI99r2USrNPo1nLKZ149EKqzY7+wxAdcWx+8MQUJbBjzY3oSG5PUJ1Baz6gKO9iQBqOlm1pWWg=="], ["created_at", "2022-08-21 21:16:57.924571"], ["updated_at", "2022-08-21 21:16:57.924571"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "toshia@ullrich-rohan.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:61
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "paul"], ["email", "toshia@ullrich-rohan.info"], ["password_digest", "$2a$12$55SsD6bpZODrBQslu7ZnguXt6pZ2hN89WBkVBQrV.Uv4kXiCLhlWa"], ["session_token", "n6McI/zJZmEsy+8/hHCfYAVBQNj3AiiTStgzqABtXRC2iTC28sF2yOh4qD9VMKKPdrieiy11X3AV7EJ0l+igLA=="], ["created_at", "2022-08-21 21:16:58.261589"], ["updated_at", "2022-08-21 21:16:58.261589"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade Genuine Leather Women's Strappy Sandals, Leather Lace Up Shoes"], ["description", "Handmade Genuine Leather Women's Thong Sandals, one of the iconic sandals, show a strong stance by combining with genuine leather quality. One of the most popular strap sandal models of the new season, these women's shoes will be the signature of your style in your daily, office and special days. It is waiting to meet you with white, brown and black color options\n    \n    Material: Genuine Leather, EVA sole\n    Height : 3 cm\n    \n    ✔ Make sure you check our size-chart before you place your order.\n\n    • It is original and all models are designed.\n    • It is completely handmade.\n    • It is antibacterial, does not contain carcinogenic and allergen substances.\n    • To be very light and comfortable, it creates unstoppable feelings.\n    • It is suitable for living in the city."], ["seller_id", 10], ["price", 59.4], ["category", "Sandals"], ["created_at", "2022-08-21 21:16:58.266204"], ["updated_at", "2022-08-21 21:16:58.266204"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Japan Anime Inspired Casual Sneakers, Unisex Anime Shoes, Manga Sneakers"], ["description", "UNISEX Streetwear Anime-Inspired Cosplay Sneakers.\n\n    United Kingdom customers please be sure to buy 1 size bigger than usual for a comfy fit.\n\n    Light and comfortable, basic printed shoes without brand.\n    Material: Cotton, Rubber, and PU Leather."], ["seller_id", 8], ["price", 48.79], ["category", "Sneakers"], ["created_at", "2022-08-21 21:16:58.271226"], ["updated_at", "2022-08-21 21:16:58.271226"]]
+  ↳ db/seeds.rb:87
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Classic Hologram Iridescent High Heels | 7 colors| Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps"], ["description", "Classic Pink Hologram Iridescent High Heels | Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps\n\n    Pump Type: Basic\n    Heel Type: Thin Heels\n    Upper Material: Patent Leather\n    Heel Height: Super High (8cm-up)\n    Fashion Element: Shallow\n    Insole Material: PU\n    Lining Material: PU\n    Season: Spring/Autumn\n    Toe Shape: Pointed Toe\n    Outsole Material: Rubber\n    Item Type: Pumps\n    Closure Type: Slip-On\n    HEEL: 12cm 10cm 8cm"], ["seller_id", 7], ["price", 80.0], ["category", "Pumps"], ["created_at", "2022-08-21 21:16:58.275590"], ["updated_at", "2022-08-21 21:16:58.275590"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:125
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Crystal Rhinestone Applique Accessory Craft For Women Shoe Heel Barefoot Sandal Belt Headband Wedding Bridal"], ["description", "A little colour to pop your look as you enter & major sparkle as you exit!\n    The listing is for one piece of diamante motif.\n    Please order two if you need them to decorate shoes.\n    Dimensions Approxi.: (10.5cm x 5.8 cm)\n\n    These motifs are perfect for making any heels that you want to wear more bridal!\n\n    Bridesmaid can wear these motifs to create a cohesive look no matter what colour shoes they wear.\n\n    This appliqué can be applied with a hot iron (checking regularly through the process to make sure it is stuck and the item doesn't become damaged), or alternatively with hot glue from a glue gun."], ["seller_id", 9], ["price", 12.43], ["category", "Accessories"], ["created_at", "2022-08-21 21:16:58.280004"], ["updated_at", "2022-08-21 21:16:58.280004"]]
+  ↳ db/seeds.rb:125
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:125
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:143
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Huarache ~ All Sizes Boho- Hippie Vintage ~ Mexican Style ~ Colorful Leather ~ Mexican Huaraches"], ["description", "This style is Beige with Black color\n\n    Made in Mexico\n    Handmade\n    100% Natural Leather\n    Completely handmade\n    A unique style Huarache.\n\n\n    We do not handle intermediate sizes, example 5.5, if you use 7.5 order a 7. If you are a 7 , order a 7. Huarache will mold by use- they stretch."], ["seller_id", 1], ["price", 39.99], ["category", "Flats"], ["created_at", "2022-08-21 21:16:58.284391"], ["updated_at", "2022-08-21 21:16:58.284391"]]
+  ↳ db/seeds.rb:143
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:143
+  [1m[36mProduct Load (10.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (5.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+[36m  S3 Storage (1745.5ms) [0m[32mUploaded file to key: pRz8GY47o663mzZSQCkKv1Zy (checksum: xAsTbX9Emgr2C39vteyv8g==)[0m
+  [1m[35m (18.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Create (34.7ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "pRz8GY47o663mzZSQCkKv1Zy"], ["filename", "sandal1_index.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 102094], ["checksum", "xAsTbX9Emgr2C39vteyv8g=="], ["created_at", "2022-08-21 22:35:53.808689"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Create (21.9ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "index_photo"], ["record_type", "Product"], ["record_id", 6], ["blob_id", 1], ["created_at", "2022-08-21 22:35:53.937813"]]
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2022-08-21 22:35:53.961710"], ["id", 6]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e29130f2-26f7-451e-85cc-6c63026088c3) to Async(default) with arguments: #<GlobalID:0x00007fa15ca866a0 @uri=#<URI::GID gid://shoesy/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Blob Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3] Performing ActiveStorage::AnalyzeJob (Job ID: e29130f2-26f7-451e-85cc-6c63026088c3) from Async(default) with arguments: #<GlobalID:0x00007fa15f9d4a88 @uri=#<URI::GID gid://shoesy/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3] [36m  S3 Storage (271.0ms) [0m[34mDownloaded file from key: pRz8GY47o663mzZSQCkKv1Zy[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3]   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3]   [1m[36mActiveStorage::Blob Update (3.1ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3]   [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e29130f2-26f7-451e-85cc-6c63026088c3] Performed ActiveStorage::AnalyzeJob (Job ID: e29130f2-26f7-451e-85cc-6c63026088c3) from Async(default) in 1356.66ms
+  [1m[36mProduct Load (8.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+Started GET "/" for ::1 at 2022-08-22 14:16:14 -0400
+  [1m[35m (21.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aa/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (13.0ms)
+  [1m[36mUser Load (28.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 7531ms (Views: 7448.3ms | ActiveRecord: 46.8ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:23:42 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 52ms (Views: 8.0ms | ActiveRecord: 16.0ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:23:48 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:28:18 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (67.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 126ms (Views: 5.5ms | ActiveRecord: 67.6ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:28:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 201ms (Views: 191.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:40:08 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (24.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 68ms (Views: 5.2ms | ActiveRecord: 30.1ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:40:32 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"guest@gmail.com", "username"=>"Demo User", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (36.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "guest@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:42
+  [1m[36mUser Exists (30.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "guest@gmail.com"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mUser Update (68.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "Vcx/zzeCpFxVyB7Q13kV7oVAEFlt4u3TBFO/EUBst73Tsw5dGMZJeLIQySEkeQRlz014XOJRAlOgBeHp0LRWTA=="], ["updated_at", "2022-08-22 18:40:33.958019"], ["id", 6]]
+  ↳ app/models/user.rb:42
+  [1m[35m (19.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:42
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (3.0ms)
+  Rendered api/users/show.json.jbuilder (16.9ms)
+Completed 200 OK in 1181ms (Views: 31.3ms | ActiveRecord: 237.3ms)
+
+
+Started DELETE "/api/session" for ::1 at 2022-08-22 14:40:38 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Vcx/zzeCpFxVyB7Q13kV7oVAEFlt4u3TBFO/EUBst73Tsw5dGMZJeLIQySEkeQRlz014XOJRAlOgBeHp0LRWTA=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:42
+  [1m[36mUser Exists (13.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "guest@gmail.com"], ["id", 6], ["LIMIT", 1]]
+  ↳ app/models/user.rb:42
+  [1m[36mUser Update (10.5ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "JNEIoxi7HUQCxzC6Z2Y/HIODztCh0Wt96Opi146Ta0Pm6OjEjxuMRwVTVzs5JmE50GL2JwAnMDGEDiOV7qZQLQ=="], ["updated_at", "2022-08-22 18:40:38.690361"], ["id", 6]]
+  ↳ app/models/user.rb:42
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:42
+Completed 200 OK in 64ms (Views: 0.2ms | ActiveRecord: 50.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:40:44 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 14:43:19 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (25.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (27.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 2125ms (Views: 0.9ms | ActiveRecord: 52.9ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:53:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 2291ms (Views: 2280.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:56:49 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 83ms (Views: 1.5ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:56:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1614ms (Views: 1608.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:57:11 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 6ms (Views: 0.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:57:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1420ms (Views: 1405.1ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:57:35 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:57:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:59:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1316ms (Views: 1305.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 14:59:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 14:59:30 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 16:05:07 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (11.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 29ms (Views: 3.8ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:05:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (16.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 174ms (Views: 168.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 16:05:14 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 16:05:23 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 486ms (Views: 0.2ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 16:05:35 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (19.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mProduct Load (11.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (24.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (8.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 7], ["record_type", "Product"], ["name", "photos"]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (3.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 8], ["record_type", "Product"], ["name", "photos"]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 8], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (3.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 9], ["record_type", "Product"], ["name", "photos"]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 9], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 10], ["record_type", "Product"], ["name", "photos"]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 10], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 6], ["record_type", "Product"], ["name", "photos"]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (3.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50] Performing ActiveStorage::PurgeJob (Job ID: 6ac3a71b-d067-4d96-a862-af27203f8e50) from Inline(default) with arguments: #<GlobalID:0x00007feef57a0648 @uri=#<URI::GID gid://shoesy/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   [1m[36mActiveStorage::Attachment Exists (3.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   [1m[36mActiveStorage::Blob Destroy (13.8ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50] [36m  S3 Storage (241.2ms) [0m[31mDeleted file from key: pRz8GY47o663mzZSQCkKv1Zy[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50] [36m  S3 Storage (50.2ms) [0m[31mDeleted files by key prefix: variants/pRz8GY47o663mzZSQCkKv1Zy/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [6ac3a71b-d067-4d96-a862-af27203f8e50] Performed ActiveStorage::PurgeJob (Job ID: 6ac3a71b-d067-4d96-a862-af27203f8e50) from Inline(default) in 1691.17ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 6ac3a71b-d067-4d96-a862-af27203f8e50) to Inline(default) with arguments: #<GlobalID:0x00007feefa74c390 @uri=#<URI::GID gid://shoesy/ActiveStorage::Blob/1>>
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "minh@koelpin.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Create (20.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "tony_klocko"], ["email", "minh@koelpin.net"], ["password_digest", "$2a$12$8ZuxfFjI1e/WboMQ83ZnkOZjyhBGTp6YvNcxXCU/H/Q5.xAyBWN0C"], ["session_token", "m8oCzssVxYt1RMuEzZUAyv9zBQZ3ZcLe8iqE7t2suPGFE9YjyoK1rcVu1xfNRkAbBIob+OB3GXJsFXiVTJMTyw=="], ["created_at", "2022-08-22 20:31:44.963405"], ["updated_at", "2022-08-22 20:31:44.963405"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mProduct Create (4.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade Genuine Leather Women's Strappy Sandals, Leather Lace Up Shoes"], ["description", "Handmade Genuine Leather Women's Thong Sandals, one of the iconic sandals, show a strong stance by combining with genuine leather quality. One of the most popular strap sandal models of the new season, these women's shoes will be the signature of your style in your daily, office and special days. It is waiting to meet you with white, brown and black color options\n    \n    Material: Genuine Leather, EVA sole\n    Height : 3 cm\n    \n    ✔ Make sure you check our size-chart before you place your order.\n\n    • It is original and all models are designed.\n    • It is completely handmade.\n    • It is antibacterial, does not contain carcinogenic and allergen substances.\n    • To be very light and comfortable, it creates unstoppable feelings.\n    • It is suitable for living in the city."], ["seller_id", 16], ["price", 59.4], ["category", "Sandals"], ["created_at", "2022-08-22 20:31:45.007175"], ["updated_at", "2022-08-22 20:31:45.007175"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:11
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mProduct Destroy (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 11], ["record_type", "Product"], ["name", "photos"]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "Product"], ["name", "index_photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "guest@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (3.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "Demo User"], ["email", "guest@gmail.com"], ["password_digest", "$2a$12$ClL/e.1hQm0cLLQPKXDhCeicVdGCcYcrw0zlngrHZ8SD8XgAasEw."], ["session_token", "jLULPxyNw3IrLArhpkEQTpNUqXPH4JV5lY179zpcwljiuHqt4ZUVTPXZYMiHyDf689zQXXbUOAyaio2NPEyTKg=="], ["created_at", "2022-08-22 20:32:45.044501"], ["updated_at", "2022-08-22 20:32:45.044501"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jeff@moore-metz.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "james.considine"], ["email", "jeff@moore-metz.co"], ["password_digest", "$2a$12$kXn2RDynvkkZrIGgh2DeR.5futTODXjpCidTMvkrtX9z38rO9xsFS"], ["session_token", "X3BngsqGjWt33LpcvfERUszOSmrZThwxWyFFCsJjGHzwv1TMRskPxc7MHbW6Z18SNd2iqtFEI43YIKhmGnKJSg=="], ["created_at", "2022-08-22 20:32:46.652977"], ["updated_at", "2022-08-22 20:32:46.652977"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "donny.stanton@wolff.io"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "claretha_schaefer"], ["email", "donny.stanton@wolff.io"], ["password_digest", "$2a$12$Sk1JtXa8vHupscAbxnsLEOJ2IF1obwznCJGRHyQ/HPLKC1aUavW42"], ["session_token", "6iGrWulUm4S3gtBfCioH8ykXmIDw6FFyC4lRWmlGV6aUB2S1EXqyqAXJHdf7Ef+33YJ04bV6qO8HRggcasWblw=="], ["created_at", "2022-08-22 20:32:46.940458"], ["updated_at", "2022-08-22 20:32:46.940458"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lula@schulist-medhurst.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:31
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "maurice_schowalter"], ["email", "lula@schulist-medhurst.com"], ["password_digest", "$2a$12$8EzuBvav4zanYIjugxhOiO/dxuaogP8YTAXassoPKSXu3gNQlFzIK"], ["session_token", "oTy6WwpNbob40K92To3QZieIz8KQ7gLfVha5k8FFTrWsphEirriGX7iKfxL7vYZ21LRtlJPPlWjjw7J70eiZzQ=="], ["created_at", "2022-08-22 20:32:47.241743"], ["updated_at", "2022-08-22 20:32:47.241743"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "chuck.wolff@hettinger-emmerich.net"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:36
+  [1m[36mUser Create (3.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "delila_herman"], ["email", "chuck.wolff@hettinger-emmerich.net"], ["password_digest", "$2a$12$o3gp//Tc1oTQ7XJACL5HaOP0TXX317cSjXw/JqvYV1esEYBCeYGda"], ["session_token", "5wyZfAx+sZXOuHpnaJVqgpktpoERuSu7cD+NpZQiJ7QYpAq/3xIdeukf8oP1mGteBxulpmB97prQdDw/ZZri8g=="], ["created_at", "2022-08-22 20:32:47.527826"], ["updated_at", "2022-08-22 20:32:47.527826"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "meaghan.bednar@kertzmann-bruen.org"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:41
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "roberto"], ["email", "meaghan.bednar@kertzmann-bruen.org"], ["password_digest", "$2a$12$Qx7a5yDDU6OvyG4.RwEQyezHT.zaRFw4ZaF4cetRzRmUxVj.bmpH2"], ["session_token", "pzfwyekY3Ls1/3mnmkKtPVSbDW0/MUtd/C8ygAqMUC4Q+EVO/Bi6JPtEecNzqkxypy0KAFnsl0MladlxboJAig=="], ["created_at", "2022-08-22 20:32:47.911857"], ["updated_at", "2022-08-22 20:32:47.911857"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "marg@schmitt.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:46
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "william"], ["email", "marg@schmitt.info"], ["password_digest", "$2a$12$XLFeoLqR2toYUyppYQ4oo.vg6326IeKYXIlOlF1lsCynsSTK/u4iO"], ["session_token", "HdY7LTNBAYn6WPtPJ2SkwsCiYe+9/9DKqZm7QtjH3v+OEfQxgNeeBDvc7HIjGa3AC2JzANUsz/9YIkD42CrFzA=="], ["created_at", "2022-08-22 20:32:48.200417"], ["updated_at", "2022-08-22 20:32:48.200417"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kareem_hoeger@schimmel.info"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:51
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "cinthia.huel"], ["email", "kareem_hoeger@schimmel.info"], ["password_digest", "$2a$12$EoOEvAgG4qYis7abruE.duA6Zstl964AiHU5JOuolDa5DqYmhYf/m"], ["session_token", "it5yjVny34/tus3M5A4XF6laCUCrOmkkMxovVAuAxHUjk260TEIS+7+DZQlekRDgjVGwbNePipblm0y58oCUTQ=="], ["created_at", "2022-08-22 20:32:48.486292"], ["updated_at", "2022-08-22 20:32:48.486292"]]
+  ↳ db/seeds.rb:51
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:56
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "madalene.king@weimann.biz"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:56
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "whitney_cartwright"], ["email", "madalene.king@weimann.biz"], ["password_digest", "$2a$12$wXa0uZ/OTnKAGpFlvmQu2e2/Qf1d1.SKtHglVy/j/d72mVoowCXUG"], ["session_token", "nvx0nvcX3y/WjPYzgwpYVWqDSsUL3k6Kl8RZIgGWePBbMPOofb7p9v6U28Oz6fNSnAW0MSR8jvY4WpdweWC8kQ=="], ["created_at", "2022-08-22 20:32:48.772687"], ["updated_at", "2022-08-22 20:32:48.772687"]]
+  ↳ db/seeds.rb:56
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:56
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "leonardo@rau-gleichner.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:61
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "joe_nicolas"], ["email", "leonardo@rau-gleichner.co"], ["password_digest", "$2a$12$K9qdpKsIwoQCHzxg8urbVe29taSk90SUqHBiY46cDj/YKdhixe1Ee"], ["session_token", "v7PvJ1sZI8ZgqapkFD/61IShljvrNdQwo8f8vCRERSrqPD32cKgLRbFnsrLo7Lm5tku0mR9MlWAbE0rjOqHa+Q=="], ["created_at", "2022-08-22 20:32:49.058023"], ["updated_at", "2022-08-22 20:32:49.058023"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:67
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade Genuine Leather Women's Strappy Sandals, Leather Lace Up Shoes"], ["description", "Handmade Genuine Leather Women's Thong Sandals, one of the iconic sandals, show a strong stance by combining with genuine leather quality. One of the most popular strap sandal models of the new season, these women's shoes will be the signature of your style in your daily, office and special days. It is waiting to meet you with white, brown and black color options\n    \n    Material: Genuine Leather, EVA sole\n    Height : 3 cm\n    \n    ✔ Make sure you check our size-chart before you place your order.\n\n    • It is original and all models are designed.\n    • It is completely handmade.\n    • It is antibacterial, does not contain carcinogenic and allergen substances.\n    • To be very light and comfortable, it creates unstoppable feelings.\n    • It is suitable for living in the city."], ["seller_id", 21], ["price", 59.4], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.063065"], ["updated_at", "2022-08-22 20:32:49.063065"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:88
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Women's Metallic Greek leather gladiator sandals"], ["description", "We can ensure that you will fall in love with our best seller leather sandals !\n    A unique and simple design of Greek leather sandals, designed to surround your feet.\n    Curves and braids come gently together offering beauty and strength.\n    The ultimate choice for the bold and charming."], ["seller_id", 26], ["price", 76.78], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.068669"], ["updated_at", "2022-08-22 20:32:49.068669"]]
+  ↳ db/seeds.rb:88
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:88
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade to order decorated sandals 'Chili Mango', Lace up Sandals, Leather Sandals, Boho Shoes, Pom pom Sandals, Gladiator Sandal"], ["description", "Women shoes handmade in Greece. Pom Pom sandals made out of natural leather and Pom Poms.\n\n    🛩 Shipping via DHL Express worldwide 🛩\n    🔸Please do not forget to include a phone number at checkout🔸\n\n    Our \"Chili mango\" flats are made from genuine Greek leather. The leather straps are decorated with friendship bracelets in vibrant colors and motifs. The cord is embellished with semiprecious stones, gold-plated coins, multicolored charms and tassels.\n\n    One of our first and best selling styles. No comments needed for this design! We are sure that everyone of you girls need a pair of these happy colorful beauties!\n\n    SIZE CHART\n\n    EU........USA........UK..........CM............INCHES\n    35..........4.............2...........23,5 ..........9.2\"\n    36..........5.............3...........24..............9,4\"\n    37..........6.............4............25..............9,8\"\n    38..........7.............5............25,5...........10\"\n    39..........8............6............26..............10,2\"\n    40..........9............7............26,8............10,5\"\n    41..........10............8...........27,5............10,8\"\n    42..........11............9...........28...............11\"\n\n    ►whole sizes only\n    ►If you take half size, go UP to the nearest whole size\n    ►Fit: Normal\n    •Please note that friendship bracelets may vary slightly or the pom poms may vary in colors or shades."], ["seller_id", 23], ["price", 188.26], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.073759"], ["updated_at", "2022-08-22 20:32:49.073759"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:135
+  [1m[36mProduct Create (8.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Gladiator leather sandals, gold lace up wedding sandals, greek strappy boho sandals"], ["description", "The Medusa Gladiator leather sandal is the perfect summer statement. It laces up the front of the leg with a leather cord. The intricate back is full of handmade detail and style. We love this sandal with cut-offs or a summer dress\n\n    In Greek mythology Medusa meaning guardian or protectorates was a monster, a Gorgon, generally described as a winged human female with a hideous face and living venomous snakes in place of hair. Gazers on her face would turn to stone.\n\n    Medusa was beheaded by the hero Perseus, who thereafter used her head, which retained its ability to turn onlookers to stone, as a weapon until he gave it to the goddess Athena to place on her shield. In classical antiquity the image of the head of Medusa appeared in the evil-averting device known as the Gorgoneion.\n\n\n\n    This sandal is made to order in will ship within 10 business days anywhere in the world.\n\n    The all leather sole is perfect for absorbing the summer heat from your feet and the soft leather upper will mold to your feet for the perfect fit.\n\n    • Hand-crafted Greek style sandal, all leather upper\n    • Heel measures approximately 7.5mm/.3inches\n    • 100% leather upper and lower sole keeps the feet cool and allows them to breathe\n    • Gripped rubber heel for traction, durability and added comfort\n    • Leather lacing ties at ankle\n    • Toe strap for stability and style\n    • Wearing these sandals in wet weather conditions is not recommended\n    • Made on the Mediterranean island of Cyprus\n\n\n\n    ALL ORDERS WILL BE SHIPPED FROM CYPRUS UNLESS OUT OF STOCK OR CUSTOM ORDER.\n    Custom order ship from our factory directly in Greece.\n\n    ALL STOCK ITEMS WILL BE SHIPPED VIA TNT COURIER SERVICE WITH DELIVERY 1-3 BUSINESS DAYS WORLDWIDE.\n    Exceptions will be out of location that are categorized by TNT as out of area.If this occurs we will notify you.\n\n\n\n    ALL ITEMS PURCHASED ON DISCOUNT CAN BE EXCHANGED OR GIVEN STORE CREDIT FOR THE FULL AMOUNT ( NO ADDITIONAL CHARGE FOR SHIPPING)\n    ALL DISCOUNTED ITEMS RETURNED FOR A REFUND WILL RECEIVE THEIR FULL PAYMENT MINUS SHIPPING COSTS INCURED. ( Vary depening on item and method used $15 to $35)"], ["seller_id", 18], ["price", 76.78], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.078795"], ["updated_at", "2022-08-22 20:32:49.078795"]]
+  ↳ db/seeds.rb:135
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:135
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:178
+  [1m[36mProduct Create (4.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brown Leather Sandals, Ancient Grecian Sandals, Genuine Leather Sandals , Casual Leather Flats, Greek Strappy Sandals 'Nephele'"], ["description", " Our elegant and sexy Nephele leather strappy sandals in brown. Made of the best quality soft leather with an ankle strap with metal buckles. They have an excellent fit. Perfect for all day chic and comfy wear.\n\n\n    ♥ Our top quality genuine leather sandals are very soft, elegant, comfortable and durable.\n\n    ♥ Carefully packaged in a box.\n\n    ♥ Available in Brown, Black, Silver, Gold and Tan leather. Leather in natural color will eventually beautifully darken under the sun."], ["seller_id", 26], ["price", 67.31], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.093307"], ["updated_at", "2022-08-22 20:32:49.093307"]]
+  ↳ db/seeds.rb:178
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:178
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:195
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Greek Toe ring Sandals, Slip-on Leather Sandals, Braided Sandal, Ancient grecian sandals, Handmade sandals, Classic Greek Sandals 'Anemos'"], ["description", " ♥ Anemos is a simple slip-on sandal with an intricate braid strap. As classic as it is versatile, this sandal showcases plenty of tanned skin, while also providing comfort for all your sunny adventures. Enlist a sundress and sweep your hair off your shoulders for maximum holiday impact.\n\n\n    ♥ Our top quality genuine leather sandals are very soft, elegant, comfortable and durable.\n\n    ♥ Carefully packaged in a box."], ["seller_id", 26], ["price", 67.31], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.103729"], ["updated_at", "2022-08-22 20:32:49.103729"]]
+  ↳ db/seeds.rb:195
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:195
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:211
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Toe Ring Leather Sandals with Wide Straps Contemporary Modern Unique Style Slippers Greek Women Sliders Black Brown Silver"], ["description", "For unique footwear choose these statement Greek Sandals. Entirely handmade from a premium quality leather from Crete by experienced craftsman according to traditional technique. A traditional style made with a contemporary twist. The slider sandal feature a partially curved upper part and chunky toe ring and a wide strap. Available in basic black, brown, or silver color, these modern sliders will satisfy all your footwear needs. Instantly, it brings attention to the beautiful curves of your feet and pretty toenail polished artwork, too!\n\n    Made with comfort and style in mind, the Greek footwear features refined but casual elements! Thanks to its minimalist style, the low sandals pair effortlessly with a selection of outfits, go for party wear, a nice skirt, or put your favorite jeans on, a tee and you are ready to seize the day. Create a variety of trendy outfits with this pair of chic sandals! Order the summer wear now and indulge yourself in Greek fashion no matter where are you located\n\n    Buy it for yourself or gift it. Stylish shoes make the perfect gift for her, for birthday, graduation, Christmas, Mother’s day, appreciation gift, or just because.\n\n    ABOUT\n    • Genuine leather sandals\n    • The Celaeno sandals\n    • Women’s footwear\n    • High-quality chemical-free authentic leather from Crete\n    • Available in black, brown, and silver\n    • Modern, contemporary design\n    • Toe ring\n    • Wide strap\n    • Elastic sole\n    • Comfortable for all-day wear\n    • Handmade in Greece by experienced sandal manufacturers\n    • Timeless design to complement a variety of fashion styles\n    • If you have any questions, please contact me\n\n    Care Instructions\n    This material should be cleaned by hand with a damp cloth without aggressive chemicals."], ["seller_id", 20], ["price", 71.1], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.111008"], ["updated_at", "2022-08-22 20:32:49.111008"]]
+  ↳ db/seeds.rb:211
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:211
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:244
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "African leather sandals, women sandals, summer sandals, outdoor leather sandals,gift for her,christmas gift for loved ones, mothers day gift"], ["description", "**This sandals are 100% handcrafted using Maasai beads.\n\n    **All sizes are available as we custom make them.\n\n    **They are made using blue,white ,gold ,red and orange beads.\n\n    Perfect christmas gift for loved ones from beauty bounty\n\n\n    **Custom order are welcome .\n\n    **Ships via DHL Express."], ["seller_id", 21], ["price", 45.0], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.119231"], ["updated_at", "2022-08-22 20:32:49.119231"]]
+  ↳ db/seeds.rb:244
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:244
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:265
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Summer African beaded sandals, summer sandals, leather sandals, women sandals, gift for her, maasai beaded sandals, christmas gift for her"], ["description", "African beaded sandals, summer sandals, leather sandals, women sandals, gift for her, maasai beaded sandals.\n\n    100% handcrafted using maasai beads,\n\n\n    Perfect christmas gift for her.\n\n\n    All sizes are available as we custom make them.\n\n\n    For perfect fitting kindly use the last image as a guide.\n\n    Ships via dhl expressa"], ["seller_id", 21], ["price", 23.4], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.125351"], ["updated_at", "2022-08-22 20:32:49.125351"]]
+  ↳ db/seeds.rb:265
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:265
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:288
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Handmade Bohemian Moroccan leather womens sandals dyed with natural color"], ["description", "These pretty all-leather flip flops have a finely worked cutout on the strap.\n\n    Light and very comfortable, they will perfectly match the shape of your feet, to better support you with each step. and will quickly become your essential ally for sunny days.\n\n    A chic & trendy shape, appreciated by all!\n\n    Our sandals are made from high quality vegetable tanned cow leather made in Morocco, on the straps and the top sole, using traditional techniques.\n    Natural vegetable tanned cow leather gets darker by the sun and use, creating an amazing new style everyday!\n    These sandals are designed for your everyday walks providing comfort and style at the same time!\n\n    Our goal is to preserve traditional Moroccan craftsmanship and share its beauty with the world. Simple yet beautifully made, each piece is unique.\n\n    For your wholesale orders or customizations for weeding or events please don't hesitate to contact me i'll be pleased to help."], ["seller_id", 23], ["price", 38.63], ["category", "Sandals"], ["created_at", "2022-08-22 20:32:49.130006"], ["updated_at", "2022-08-22 20:32:49.130006"]]
+  ↳ db/seeds.rb:288
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:288
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:318
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Japan Anime Inspired Casual Sneakers, Unisex Anime Shoes, Manga Sneakers"], ["description", "UNISEX Streetwear Anime-Inspired Cosplay Sneakers.\n\n    United Kingdom customers please be sure to buy 1 size bigger than usual for a comfy fit.\n\n    Light and comfortable, basic printed shoes without brand.\n    Material: Cotton, Rubber, and PU Leather."], ["seller_id", 19], ["price", 48.79], ["category", "Sneakers"], ["created_at", "2022-08-22 20:32:49.135333"], ["updated_at", "2022-08-22 20:32:49.135333"]]
+  ↳ db/seeds.rb:318
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:318
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:332
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Starry Night Shoes | Van Gogh Sneakers | Art Shoes | Casual Shoes | Artist Gifts | Low Top Converse Style Shoes for Womens Mens Adults"], ["description", "Our starry night shoes are sure to attrack some attention ! Our custom made shoes are sure to attrack some attention! All of our sneakers are custom-made-to-order and handcrafted to the highest quality standards\n\n\n    Product Name: Starry Night Shoes | Van Gogh Sneakers | Art Shoes | Casual Shoes | Artist Gifts | Low Top Converse Style Shoes for Womens Mens Adults\n\n    Product Features;\n    ▶ Full canvas double sided print with rounded toe construction.\n\n    ▶ Lace-up closure for a snug fit.\n\n    ▶ Soft textile lining with lightweight construction for maximum comfort.\n\n    ▶ High-quality outsole for traction and exceptional durability.\n\n    ▶ Not sold in stores. This is a Custom Made to Order item.\n\n    ▶ Ships worldwide from China.\n\n    Sizing;\n    Please measure your foot before choosing a size. Our sizes may not match exactly with other popular shoe brands. Checkout our Sizing Chart in photos to choose the best size for you.\n\n    Quality of the shoes;\n    All of our shoes are custom-made-to-order and handcrafted to the highest quality standards. Please allow 4-7 days for your order to be handmade and shipped out."], ["seller_id", 24], ["price", 58.39], ["category", "Sneakers"], ["created_at", "2022-08-22 20:32:49.140278"], ["updated_at", "2022-08-22 20:32:49.140278"]]
+  ↳ db/seeds.rb:332
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:332
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:364
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Classic Hologram Iridescent High Heels | 7 colors| Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps"], ["description", "Classic Pink Hologram Iridescent High Heels | Mirror Patent Leather | 12cm 10cm 8cm Wedding Shoes | Pointed Toe Slip-on Pumps\n\n    Pump Type: Basic\n    Heel Type: Thin Heels\n    Upper Material: Patent Leather\n    Heel Height: Super High (8cm-up)\n    Fashion Element: Shallow\n    Insole Material: PU\n    Lining Material: PU\n    Season: Spring/Autumn\n    Toe Shape: Pointed Toe\n    Outsole Material: Rubber\n    Item Type: Pumps\n    Closure Type: Slip-On\n    HEEL: 12cm 10cm 8cm"], ["seller_id", 18], ["price", 80.0], ["category", "Heels"], ["created_at", "2022-08-22 20:32:49.145244"], ["updated_at", "2022-08-22 20:32:49.145244"]]
+  ↳ db/seeds.rb:364
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:364
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:388
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Patent T-Strap Stiletto Pumps"], ["description", "Patent T-Strap Stilettoz || Chic Classy/Dressy || Summer/Spring/Fall/Winter\n\n\n    Toe Shape: Round-Toe\n    Heel Type: Thin Heel/Stiletto\n    Heel Height: 4 inches\n    Season: Spring/Summer/Fall/Winter\n    Occasion: Chic Casual/Dressy"], ["seller_id", 23], ["price", 90.99], ["category", "Heels"], ["created_at", "2022-08-22 20:32:49.150260"], ["updated_at", "2022-08-22 20:32:49.150260"]]
+  ↳ db/seeds.rb:388
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:388
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:405
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Women Lace up Ankle Bow Strap High Heels Sandals"], ["description", "Free worldwide shipping 🌎\n    ❤️We ship using USPS, EMS, or another efficient trackable shipping method. Pls, understand that under normal circumstances you will typically receive your order(s) in-between or before the estimated delivery time…\n\n    ❤️Women Lace up Ankle Bow Strap High Heels Sandals\n\n    TOP QUALITY & 100% satisfaction guaranteed 👍🏻\n    Don't miss our flash sales and NEW PRODUCTS\n\n    Women Lace up ankle strap Square toe high heels Sandals\n    We send PHOTOS of your PRODUCT before SHIPPING!"], ["seller_id", 25], ["price", 49.99], ["category", "Heels"], ["created_at", "2022-08-22 20:32:49.155267"], ["updated_at", "2022-08-22 20:32:49.155267"]]
+  ↳ db/seeds.rb:405
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:405
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:424
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Yellow Green Gradient Color Snakeskin High Heels | Sexy 12cm Thin Heel Pointed Toe Dress Pumps | Luxury Banquet Shoes"], ["description", "Yellow Green Gradient Color Snakeskin High Heels | Sexy 12cm Thin Heel Pointed Toe Dress Pumps | Luxury Banquet Shoes\n\n    Pump Type: Basic\n    Heel Type: Thin Heels\n    Upper Material: Split Leather\n    Toe Shape: Pointed Toe\n    Heel Height: Super High (8cm-up)\n    Fashion Element: Shallow\n    Insole Material: PU\n    Lining Material: PU\n    Season: Spring/Autumn\n    Outsole Material: Rubber\n    Item Type: Pumps\n    Closure Type: Slip-On\n    Heel: 12cm 10cm 8cm\n\n\n    Please Check As Reference:\n\n    US5=EURO35 fit for foot length about 22.5cm\n    US6=EURO36 fit for foot length about 23cm\n    US6.5=EURO37 fit for foot length about 23.5cm\n    US7.5=EURO38 fit for foot length about 24cm\n    US8.5=EURO39 fit for foot length about 24.5cm\n    US9=EURO40 fit for foot length about 25cm\n    US9.5=EURO41 fit for foot length about 25.5cm\n    US10=EURO42 fit for foot length about 26cm\n    US10.5=EURO43 fit for foot length about 26.5cm\n    US12=EURO44 fit for foot length about 27cm\n    US13=EURO45 fit for foot length about 27.5cm\n    US13=EURO46 fit for foot length about 28cm"], ["seller_id", 25], ["price", 84.0], ["category", "Heels"], ["created_at", "2022-08-22 20:32:49.160306"], ["updated_at", "2022-08-22 20:32:49.160306"]]
+  ↳ db/seeds.rb:424
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:424
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:464
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bow Stiletto Leather High Heels, Pointed Toe Women's Shoes"], ["description", "Free worldwide shipping 🌎\n    ❤️We ship using USPS, EMS, or another efficient trackable shipping method. Pls, understand that under normal circumstances you will typically receive your order(s) in-between or before the estimated delivery time…\n\n    Bow Stiletto Leather High Heels, Pointed Toe Women's Shoes\n\n    TOP QUALITY & 100% satisfaction guaranteed 👍🏻\n    Follow our shop 🔝\n    Don't miss our flash sales and NEW PRODUCTS\n\n    We may send PHOTOS of your PRODUCT before SHIPPING!\n    Please FOLLOW SIZE GUIDELINES Strictly…"], ["seller_id", 25], ["price", 44.99], ["category", "Heels"], ["created_at", "2022-08-22 20:32:49.165342"], ["updated_at", "2022-08-22 20:32:49.165342"]]
+  ↳ db/seeds.rb:464
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:464
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:486
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Crystal Rhinestone Applique Accessory Craft For Women Shoe Heel Barefoot Sandal Belt Headband Wedding Bridal"], ["description", "A little colour to pop your look as you enter & major sparkle as you exit!\n    The listing is for one piece of diamante motif.\n    Please order two if you need them to decorate shoes.\n    Dimensions Approxi.: (10.5cm x 5.8 cm)\n\n    These motifs are perfect for making any heels that you want to wear more bridal!\n\n    Bridesmaid can wear these motifs to create a cohesive look no matter what colour shoes they wear.\n\n    This appliqué can be applied with a hot iron (checking regularly through the process to make sure it is stuck and the item doesn't become damaged), or alternatively with hot glue from a glue gun."], ["seller_id", 20], ["price", 12.43], ["category", "Accessories"], ["created_at", "2022-08-22 20:32:49.170468"], ["updated_at", "2022-08-22 20:32:49.170468"]]
+  ↳ db/seeds.rb:486
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:486
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:504
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Crystal Rhinestone Applique Accessory Craft For Women Shoe Heel Barefoot Sandal Belt Headband Wedding Bridal"], ["description", "A little colour to pop your look as you enter & major sparkle as you exit!\n    The listing is for one piece of diamante motif.\n    Please order two if you need them to decorate shoes.\n    Dimensions Approxi.: (10.5cm x 5.8 cm)\n\n    These motifs are perfect for making any heels that you want to wear more bridal!\n\n    Bridesmaid can wear these motifs to create a cohesive look no matter what colour shoes they wear.\n\n    This appliqué can be applied with a hot iron (checking regularly through the process to make sure it is stuck and the item doesn't become damaged), or alternatively with hot glue from a glue gun."], ["seller_id", 20], ["price", 12.43], ["category", "Accessories"], ["created_at", "2022-08-22 20:32:49.175450"], ["updated_at", "2022-08-22 20:32:49.175450"]]
+  ↳ db/seeds.rb:504
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:504
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:522
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "seller_id", "price", "category", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Huarache ~ All Sizes Boho- Hippie Vintage ~ Mexican Style ~ Colorful Leather ~ Mexican Huaraches"], ["description", "This style is Beige with Black color\n\n    Made in Mexico\n    Handmade\n    100% Natural Leather\n    Completely handmade\n    A unique style Huarache.\n\n\n    We do not handle intermediate sizes, example 5.5, if you use 7.5 order a 7. If you are a 7 , order a 7. Huarache will mold by use- they stretch."], ["seller_id", 1], ["price", 39.99], ["category", "Flats"], ["created_at", "2022-08-22 20:32:49.180338"], ["updated_at", "2022-08-22 20:32:49.180338"]]
+  ↳ db/seeds.rb:522
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:522
+Started GET "/" for ::1 at 2022-08-22 16:34:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 849ms (Views: 839.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:35:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 101ms (Views: 97.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:36:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (10.2ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 654ms (Views: 642.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:36:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:36:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 804ms (Views: 799.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:45:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 755ms (Views: 747.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:48:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 168ms (Views: 148.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:50:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1216ms (Views: 1205.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:51:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 781ms (Views: 775.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:52:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 796ms (Views: 780.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 16:53:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 86ms (Views: 77.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 17:07:58 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (18.0ms)
+  [1m[36mUser Load (30.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1921ms (Views: 1881.4ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 17:19:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (14.7ms)
+  [1m[36mUser Load (9.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 212ms (Views: 196.1ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 17:31:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (25.4ms)
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1027ms (Views: 992.1ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:14:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (19.6ms)
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 260ms (Views: 243.4ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:21:14 -0400
+  [1m[35m (18.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aa/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 4340ms (Views: 4317.3ms | ActiveRecord: 15.2ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 18:21:34 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (55.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 73ms (Views: 0.2ms | ActiveRecord: 55.1ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 18:24:30 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (2.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 1844ms (Views: 0.3ms | ActiveRecord: 60.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:35:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 946ms (Views: 938.7ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 18:36:02 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 6ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:45:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 763ms (Views: 756.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:46:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 124ms (Views: 115.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:46:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 53ms (Views: 47.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:47:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (14.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 710ms (Views: 702.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 18:47:27 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 31ms (Views: 0.3ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:49:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1205ms (Views: 1193.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 18:49:51 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 6ms (Views: 0.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 18:50:56 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 695ms (Views: 690.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 18:52:13 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:01:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 839ms (Views: 828.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:01:49 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:02:23 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:04:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1218ms (Views: 1207.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:04:34 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 14ms (Views: 0.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:07:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1417ms (Views: 1411.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:07:17 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:07:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 809ms (Views: 804.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:07:57 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 6ms (Views: 0.4ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 19:08:04 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (3.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (8.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 388ms (Views: 0.2ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:08:43 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 148ms (Views: 142.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:08:47 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 6ms (Views: 0.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:09:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 671ms (Views: 663.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:10:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 743ms (Views: 730.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:10:35 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 13ms (Views: 2.2ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 19:10:50 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 307ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:11:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 811ms (Views: 804.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/session" for ::1 at 2022-08-22 19:11:54 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:22
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:12:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 559ms (Views: 554.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 19:12:23 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (2.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 328ms (Views: 0.3ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 19:15:54 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 305ms (Views: 1.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2022-08-22 19:17:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1548ms (Views: 1541.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/users" for ::1 at 2022-08-22 19:17:27 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "username"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:4
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:4
+Completed 401 Unauthorized in 343ms (Views: 1.3ms | ActiveRecord: 2.8ms)
+
+

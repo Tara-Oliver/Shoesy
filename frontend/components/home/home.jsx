@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ProductIndex from '../products/product_index';
 
 
 const Home = () => {
@@ -36,8 +37,8 @@ const Home = () => {
 
 
             <div className='bubble-item'>
-              <Link to='/Pumps'><img src={'/Pumps.png'} alt="pumps_bubble" />
-                <p>Pumps</p>
+              <Link to='/Heels'><img src={'/Pumps.png'} alt="heels_bubble" />
+                <p>Heels</p>
               </Link>
             </div>
 
@@ -48,7 +49,7 @@ const Home = () => {
                 <p>Flats</p>
               </Link>
             </div>
-
+            {/* <ProductIndex/> */}
 
           </div>
         </div>

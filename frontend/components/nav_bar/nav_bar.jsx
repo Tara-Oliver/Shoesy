@@ -1,10 +1,14 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-const NavBar = ({logout, currentUser, openModal}) => {
+const NavBar = ({logout, currentUser, openModal, history}) => {
+
+  const redirect = () => {
+    logout().then(() => history.push(`/`));
+  }
 
   const session_button = currentUser ? 
-    (<button className="btn" onClick={() => logout().then(() => history.push('/'))}>Sign out</button>) : 
+    (<button className="btn" onClick={redirect}>Sign out</button>) : 
   
   (<button className="btn" onClick={() => openModal('login')}>Sign in</button>)
 
