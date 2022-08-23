@@ -49,11 +49,11 @@ const Home = () => {
                 <p>Flats</p>
               </Link>
             </div>
-            {/* <ProductIndex/> */}
 
           </div>
         </div>
       </div>
+           <ProductIndex/> 
     </header >
   )
     

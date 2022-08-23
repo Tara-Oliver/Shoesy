@@ -311,10 +311,6 @@ sandal10 = Product.create!(
 
 
 
-
-
-
-
 sneaker1 = Product.create!(
     name: "Japan Anime Inspired Casual Sneakers, Unisex Anime Shoes, Manga Sneakers",
     description:"UNISEX Streetwear Anime-Inspired Cosplay Sneakers.

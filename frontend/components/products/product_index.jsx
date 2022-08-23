@@ -1,115 +1,59 @@
-import React from "react";
-import ProductIndexItem from "./product_index_item";
-
+import React from 'react';
+import ProductIndexItem from './product_index_item';
 
 class ProductIndex extends React.Component {
-    
+    constructor(props) {
+        super(props);
+    }
 
-    componentDidMount() {
-       this.props.fetchProducts() 
+    componentDidMount(){
+        console.log(this.props);
+        this.props.fetchProducts()
     }
 
     render(){
-        // this.props.prods.map(prod => (
-        //     <ProductIndexItem 
-        //         prod={prod}
-        //         key={prod.id}
-        //     />
-        // ))
-
+        debugger
         return(
             <>
-                <div ><p>Best Sellers</p></div>
-            {/* <div className="recently-viewed">
-                    <div ><p>Best Sellers</p></div>
-                    <ul>
-                        {products[0]}
-                        {products[5]}
-                        {products[8]}
-                        {products[2]}
-                        {products[7]}
-                        {products[3]}
-                    </ul>
+                <div className='index-container'>
+                    <div className='inner'>
+                        <div className='inner-header'>
+                            <h2 className='index-title'>Popular gifts right now</h2>
+                        </div>
+                    </div>
+                    <div className='recent'> 
+                        <ul className='item-box'>
+                            <li className='prod-pics'>
+                                <a href="">
+                                    <img className='pics' src={'/Pump4.jpg'} />
+                                    <div className="listing-reviews">
+                                        <p className='name'>Snakeskin High Heels</p>
+                                    </div>
+                                    $84.00
+                                </a>
+                            </li>
+                            
+                            <li className='prod-pics'>
+                                <a href="">
+                                    <img className='pics' src={'/Sandal3.jpg'} />
+                                    <div className="listing-reviews">
+                                        <p className='name'>Pom pom Sandals</p>
+                                    </div>
+                                    $188.26
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
                 </div>
-
-                <div className="hand-picked">
-                    <h1>Discover unique hand-picked items</h1>
-                    <div className="hand-picked-nav">
-                        <ul>
-                            <li><a>Home improvement ideas</a></li>
-                            <li><a>Personalized gifts</a></li>
-                            <li><a>Comfortwear</a></li>
-                            <li><a>Cozy up</a></li>
-                            <li><a>Storage & Organization</a></li>
-                            <li><a>Work from home</a></li>
-                        </ul>
-                    </div>
-
-
-                    <div className="hand-picked-images">
-                        <ul>
-                            <div className="large-pics-selected">
-                                {products[13]}
-                            </div>
-                            <li>
-                                <div>
-                                    <ul className="vertical-selected">
-                                        {products[18]}
-                                        {products[1]}
-                                    </ul>
-                                </div>
-                            </li>
-                            <div className="large-pics-selected">
-                                {products[19]}
-                            </div>
-                            <li>
-                                <div>
-                                    <ul className="vertical-selected">
-                                        {products[4]}
-                                        {products[12]}
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-               
-                </div> */}
-
-                {/* <div className="what-is-uniqsy group">
-                    <h2>What is Uniqsy?</h2>
-                    <p><a>Read our wonderfully weird story.</a></p>
-                    <div className="coll-container clearfix">
-                        <div className="coll coll-1-3">
-                            <h3>A one-of-a-kind community</h3>
-                            <p>
-                                Uniqsy is a global online marketplace, where people come together to make, sell, buy, and collect unique items.
-                            </p>
-                        </div>
-                        <div className="coll coll-1-3">
-                            <h3>Support independent creators</h3>
-                            <p>There’s no Etsy warehouse – just millions of people selling the things they love. We make the whole process easy, helping you connect directly with makers to find something extraordinary.</p>
-                        </div>
-                        <div className="coll coll-1-3">
-                            <h3>Peace of mind</h3>
-                            <p>Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we are always ready to step in for support.</p>
-                        </div>
-                    </div>
-                    <div className="question-section">
-                
-                        <h3>Contact me</h3>
-                    
-                        <a href="https://www.linkedin.com/in/sediqafahimi/">Linkedin</a>
-                        <a href="https://github.com/Sediqa-Fahimi">GitHub</a>
-                        <a href="https://sediqa-fahimi.github.io/">Portfolio</a>
-                    </div> */}
-
-                    {/* <img src={window.blueCircleURL} alt="" className="blue-circle-png" /> */}
-                    
-
-                {/* </div> */}
-         </>
+            </>
         )
     }
+
 }
+
 
 export default ProductIndex;
