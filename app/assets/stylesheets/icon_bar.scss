@@ -9,14 +9,14 @@
     align-items: top;
     justify-content: center;
     background-color: #F8EBE6;
-    height: 204px;
+    height: 185px;
 }
 
 .header {
     font-size: 30px;
     line-height: 25px;
     font-weight: 200;
-    margin-top: 90px;
+    margin-top: 30px;
     font-family: "Guardian-EgypTT", Charter, "Charter Bitstream", Cambria, "Noto Serif Light", "Droid Serif", Georgia, serif;
     letter-spacing: 0.35px;
     color: #222222 !important;  
@@ -54,14 +54,15 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 25px;
     
     a {
         text-decoration: none;
     }
 
     img {
-       height: 114px; 
-       width: 114px;
+       height: 150px; 
+       width: 150px;
        border-radius: 50%;
        border: 1px solid rgba(34, 34, 34, 0.15) !important;
     }

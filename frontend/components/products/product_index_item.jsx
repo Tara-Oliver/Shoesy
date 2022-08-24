@@ -13,13 +13,19 @@ class ProductIndexItem extends React.Component {
         const { product } = this.props;
 
         return (
-            <li key={product.id}>
-                <Link to={`/products/${product.id}`} >
-                    <img src={product.photoUrl} alt="" />
-                    <p>{product.name}</p>
-                     ${product.price}
-                </Link>
-            </li >
+            // <div className='prod-container'>
+                // <li key={product.id} className='index-list-item'>
+                    <Link to={`/products/${product.id}`} >
+                        <img src={product.photoUrl} alt="" />
+                <p className='price-badge-container'>
+                        <span className='price-badge'> 
+                            <span>$</span>
+                            <span>{product.price}</span> 
+                        </span>
+                        </p>
+                    </Link>
+                // </li >
+            // </div>
         )
         
     }
@@ -27,4 +33,4 @@ class ProductIndexItem extends React.Component {
 
 
 
-export default ProductIndexItem;
+export default withRouter(ProductIndexItem);

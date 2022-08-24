@@ -4,12 +4,14 @@ import { connect } from "react-redux";
 import React from 'react';
 
 const mSTP = (state) => ({
-    prods: Object.values(state.entities.products),
-    banana: 'banana'
+    prods: Object.values(state.entities.products)
 });
+
 
 const mDTP = (dispatch) => ({
     fetchProducts: () => dispatch(fetchProducts())
 });
+
+
 
 export default connect(mSTP, mDTP)(ProductIndex);

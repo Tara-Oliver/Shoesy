@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProductIndex from '../products/product_index';
-
+import ProductIndexContainer from '../products/product_index_container';
 
 const Home = () => {
   return (
@@ -15,21 +14,21 @@ const Home = () => {
           <div className='iconbar-bubbles'>
             
             <div className='bubble-item'>
-              <Link to='/Sneakers'><img src={'/Sneaker.png'} alt="sneaker_bubble" />
+              <Link to='products/Sneakers'><img src={'/Sneaker.png'} alt="sneaker_bubble" />
                 <p>Sneakers</p>
               </Link>
             </div>
 
 
             <div className='bubble-item'>
-              <Link to='/Sandals'><img src={'/Sandals.png'} alt="sandal_bubble" />
+              <Link to='products/Sandals'><img src={'/Sandals.png'} alt="sandal_bubble" />
                 <p>Sandals</p>
               </Link>
             </div>
 
 
             <div className='bubble-item'>
-              <Link to='/Accessories'><img src={'/Accessories.png'} alt="accessories_bubble" />
+              <Link to='products/Accessories'><img src={'/Accessories.png'} alt="accessories_bubble" />
                 <p>Accessories</p>
               </Link>
             </div>
@@ -37,7 +36,7 @@ const Home = () => {
 
 
             <div className='bubble-item'>
-              <Link to='/Heels'><img src={'/Pumps.png'} alt="heels_bubble" />
+              <Link to='products/Heels'><img src={'/Pumps.png'} alt="heels_bubble" />
                 <p>Heels</p>
               </Link>
             </div>
@@ -45,7 +44,7 @@ const Home = () => {
 
 
             <div className='bubble-item'>
-              <Link to='/Flats'><img src={'/Flats.png'} alt="flats_bubble" />
+              <Link to='products/Flats'><img src={'/Flats.png'} alt="flats_bubble" />
                 <p>Flats</p>
               </Link>
             </div>
@@ -53,7 +52,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-           <ProductIndex/> 
+           <ProductIndexContainer/> 
     </header >
   )
     

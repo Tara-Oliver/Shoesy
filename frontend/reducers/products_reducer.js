@@ -4,7 +4,8 @@ import { RECEIVE_PRODUCTS, RECEIVE_PRODUCT, RECEIVE_REVIEW, REMOVE_REVIEW } from
 
 
 const ProductsReducer = (state = {}, action) => {
-    Object.freeze(state)
+    Object.freeze(state);
+    
     switch (action.type) {
         case RECEIVE_PRODUCTS:
             return action.products;
@@ -14,6 +15,6 @@ const ProductsReducer = (state = {}, action) => {
         default:
             return state;
     }
-}
+};
 
 export default ProductsReducer;
