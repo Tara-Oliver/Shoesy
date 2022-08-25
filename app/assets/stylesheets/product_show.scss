@@ -1,3 +1,207 @@
 .product-show-container {
     display: flex;
 }
+
+.main {
+    display: block;
+    margin: 0;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    color: #222;
+    font-size: 14px;
+    // line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+form {
+    display: block;
+    width: 550px;
+    // height: 650px;
+    margin-top: 30px;
+}
+
+.seller {
+font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.prod-name {
+        line-height: 24px;
+        font-family: "Guardian-EgypTT", Charter, "Charter Bitstream", Cambria, "Noto Serif Light", "Droid Serif", Georgia, serif;
+            font-weight: 300;
+            letter-spacing: 0.35px;
+            font-size: 20px;
+                word-break: break-word !important;
+                    // overflow-wrap: break-word !important;
+                    word-wrap: break-word !important;
+                        margin-block-start: 0.67em;
+                            margin-block-end: 0.67em;
+                            margin-inline-start: 0px;
+                            margin-inline-end: 0px;
+                            display: block;
+                                color: #222;
+}
+
+.price {
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-right: 6px !important;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.size-lbl {
+        // font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+        //     font-weight: 400;
+        //     font-size: 13px;
+        //     line-height: 18px;
+        //     display: block;
+        //     margin-bottom: 6px;
+        // display: inline-block;
+        //     font-weight: normal;
+        //     // border: 1px solid gold;
+        //     width: 100%;
+        //     font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+        //     -webkit-font-smoothing: antialiased;
+
+            font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+}
+
+select {
+    transition: border-color 200ms ease-out, box-shadow 200ms ease-out;
+        // -webkit-appearance: none;
+        // -ms-appearance: none;
+        // -moz-appearance: none;
+        // appearance: none;
+        box-shadow: 0 1px 6px 0 rgba(34,34,34,15%);
+        display: block;
+        font-family: inherit;
+        font-size: 16px;
+        height: 48px;
+        padding-left: 12px;
+        padding-right: 36px;
+        width: 100%;
+        border-radius: 6px;
+        background: #FFFFFF;
+        border-color: rgba(34, 34, 34, 0.15);
+        border-style: solid;
+        border-width: 1px;
+        color: #222222;
+        text-indent: 0.01px;
+            text-transform: none;
+        // text-overflow: "";
+        cursor: pointer;
+}
+
+.size-dropdown:hover {
+    border: 1px solid rgb(174, 167, 167);
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.desc-label {
+    display: inline-block;
+    font-weight: normal;
+    // border: 1px solid gold;
+    width: 100%;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.desc {
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    word-break: break-word !important;
+    // overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+                    
+}
+
+.cart-btn {
+    background: rgb(34, 35, 35);
+    color: white;
+    text-align: center;
+    border-radius: 300px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: all .005s ease-in-out;
+    font-family: "Graphik Webfont", -apple-system, "Helvetica Neue", "Droid Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+// .center {
+//         display: block !important;
+//             margin-left: auto !important;
+//             margin-right: auto !important;
+
+// }
+
+// .body-wrap {
+//     max-width: 1400px;
+//         margin: 0 auto;
+//         display: block;
+
+// }
+
+// .page-content{
+//     min-width: 640px;
+//     margin: 0;
+//     display: block;
+// }
+
+// .product-show-container {
+// padding-top: 30px !important;
+//     display: block !important;
+//     margin-left: auto !important;
+//     margin-right: auto !important;
+    
+// }
+
+.main-image-container {
+// display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    margin-left: 50px;
+    // margin-right: 50px;
+    margin-top: 30px;
+
+    // border: 2px solid orange;
+}
+
+.main-photo {
+    // max-height: 100%;
+    // border-radius: 6px !important;
+    // overflow: hidden !important;
+    // max-width: 100% !important;
+    // min-width: 0px !important;
+    // transform: translateY(-50%) !important;
+    // position: relative !important;
+    // top: 50% !important;
+    // display: block !important;
+    // margin-left: auto !important;
+    // margin-right: auto !important;
+    // border: 0;
+
+    max-width: 640px;
+        border-radius: 6px;
+        margin-right: 64px;
+}

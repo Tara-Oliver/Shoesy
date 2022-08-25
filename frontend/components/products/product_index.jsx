@@ -20,34 +20,6 @@ class ProductIndex extends React.Component {
         ))
         return(
             <>
-                {/* <div class="row">
-
-                    <div class="column">
-                        <div class="img-hover-zoom">
-                            {products[2]}
-                        </div>
-                        <div class="img-hover-zoom">
-                            {products[11]}
-                        </div>
-                        <div class="img-hover-zoom">
-                            {products[15]}
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="img-hover-zoom">
-                            {products[1]}
-                        </div>
-                        <div class="img-hover-zoom">
-                            {products[4]}
-                        </div>
-                        <div class="img-hover-zoom">
-                            {products[7]}
-                        </div>
-                    </div>
-                     */}
-
-
                 <div className='index-container'>
                     <div className='inner'>
                         <div className='inner-header'>
