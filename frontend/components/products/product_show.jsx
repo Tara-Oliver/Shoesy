@@ -1,14 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { openModal } from '../../actions/modal_actions';
+
 
 
 
 class ProductShow extends React.Component {
-    
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
     componentDidMount() {
         this.props.fetchProduct(this.props.match.params.productId);
     }
     
+    handleClick(e) {
+        const {currentUser, product, openModal, history} = this.props;
+        e.preventDefault();
+        if (currentUser) {
+            const cartitem = {
+                buyer_id: currentUser.id,
+                product_id: product.id
+            }
+            this.props.createCartItem(cartitem)
+                .then(() => history.push(`/checkout/cart`));
+        } else {
+            openModal('login')
+        }
+    }
+
     render() {
         const { product } = this.props;
        
@@ -25,12 +47,12 @@ class ProductShow extends React.Component {
                     />
                 </div>
                 <div>
-                    <form action="">
+                    <form className="product-form">
                         <p className='seller'>Sold by: {product.username}</p>
                         <h1 className='prod-name'>{product.name}</h1>
                         <p className='price'>${product.price}</p>
                         <label className='size-lbl'>Size</label>
-                        <select classname="size-input">
+                        <select className="size-input">
                             <option value="selected">Select an option</option>
                             <option value="6">6</option>
                             <option value="6.5">6.5</option>
@@ -43,8 +65,12 @@ class ProductShow extends React.Component {
                             <option value="10">10</option>
                             <option value="11">11</option>
                         </select>
-                        <button className='cart-btn'>Add to cart</button>
-                       <span className='desc-label'>Description</span>
+                        <button 
+                            className='cart-btn'
+                            onClick={this.handleClick}>
+                                Add to cart
+                        </button>
+                        <span className='desc-label'>Description</span>
                         <p className='desc'>{product.description}</p>
                     </form>
                 </div>
@@ -59,4 +85,4 @@ class ProductShow extends React.Component {
     
 
 
-export default ProductShow;
+export default withRouter(ProductShow);

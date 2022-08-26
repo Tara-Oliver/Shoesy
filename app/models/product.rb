@@ -8,7 +8,7 @@ class Product < ApplicationRecord
     foreign_key: :product_id,
     class_name: :Product
 
- belongs_to :cart,
+ has_many :carts,
     foreign_key: :product_id,
     class_name: :Product
 

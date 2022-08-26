@@ -31,13 +31,13 @@ const Modal = ({modal, closeModal}) => {
   );
 }
 
-const mSTP = state => {
+const mSTP = (state) => {
   return {
     modal: state.ui.modal
   };
 };
 
-const mDTP = dispatch => {
+const mDTP = (dispatch) => {
   return {
     closeModal: () => dispatch(closeModal())
   };
